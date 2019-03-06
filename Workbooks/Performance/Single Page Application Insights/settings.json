@@ -1,0 +1,18 @@
+{
+    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
+    "name": "Erkenntnisse zu Single-Page-Anwendungen",
+    "description": "Von Mezzurite Timing Library erstellte Visualisierung der Telemetriedaten von Single-Page-Anwendungen",
+    "author": "Microsoft",
+    "tags": [
+        "SPA",
+        "Angular",
+        "React"
+    ],
+    "galleries": [
+        {
+            "type": "workbook",
+            "resourceType": "microsoft.insights/components",
+            "order": 300
+        }
+    ]
+}

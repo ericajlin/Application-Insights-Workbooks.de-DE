@@ -1,0 +1,528 @@
+{
+    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json",
+    "version": "Notebook/1.0",
+    "isLocked": true,
+    "items": [
+        {
+            "type": 1,
+            "content": {
+                "json": "# <a name=\"blob-storage-classic-metrics\"></a>Blob Storage (klassisch) – Metriken"
+            },
+            "conditionalVisibility": null,
+            "halfWidth": false
+        },
+        {
+            "type": 9,
+            "content": {
+                "version": "KqlParameterItem/1.0",
+                "query": "",
+                "crossComponentResources": [],
+                "parameters": [
+                    {
+                        "id": "99846120-1f35-44fc-ad8a-6f69f7261a62",
+                        "version": "KqlParameterItem/1.0",
+                        "name": "StorageResources",
+                        "type": 5,
+                        "isRequired": true,
+                        "multiSelect": true,
+                        "quote": "'",
+                        "delimiter": ",",
+                        "isHiddenWhenLocked": false,
+                        "typeSettings": {
+                            "resourceTypeFilter": {
+                                "microsoft.classicstorage/storageaccounts": true
+                            },
+                            "additionalResourceOptions": [
+                                "value::all",
+                                "value::3"
+                            ]
+                        },
+                        "value": [
+                            "value::3"
+                        ]
+                    },
+                    {
+                        "id": "1ef46e50-5030-43fe-8c94-7e0564f4ae5f",
+                        "version": "KqlParameterItem/1.0",
+                        "name": "TimeRange",
+                        "type": 4,
+                        "isRequired": true,
+                        "value": {
+                            "durationMs": 14400000,
+                            "createdTime": "2018-08-22T17:44:54.405Z",
+                            "isInitialTime": false,
+                            "grain": 1,
+                            "useDashboardTimeRange": false
+                        },
+                        "isHiddenWhenLocked": false,
+                        "typeSettings": {
+                            "selectableValues": [
+                                {
+                                    "durationMs": 300000,
+                                    "createdTime": "2018-08-22T17:44:54.404Z",
+                                    "isInitialTime": false,
+                                    "grain": 1,
+                                    "useDashboardTimeRange": false
+                                },
+                                {
+                                    "durationMs": 900000,
+                                    "createdTime": "2018-08-22T17:44:54.404Z",
+                                    "isInitialTime": false,
+                                    "grain": 1,
+                                    "useDashboardTimeRange": false
+                                },
+                                {
+                                    "durationMs": 1800000,
+                                    "createdTime": "2018-08-22T17:44:54.404Z",
+                                    "isInitialTime": false,
+                                    "grain": 1,
+                                    "useDashboardTimeRange": false
+                                },
+                                {
+                                    "durationMs": 3600000,
+                                    "createdTime": "2018-08-22T17:44:54.404Z",
+                                    "isInitialTime": false,
+                                    "grain": 1,
+                                    "useDashboardTimeRange": false
+                                },
+                                {
+                                    "durationMs": 14400000,
+                                    "createdTime": "2018-08-22T17:44:54.404Z",
+                                    "isInitialTime": false,
+                                    "grain": 1,
+                                    "useDashboardTimeRange": false
+                                },
+                                {
+                                    "durationMs": 43200000,
+                                    "createdTime": "2018-08-22T17:44:54.404Z",
+                                    "isInitialTime": false,
+                                    "grain": 1,
+                                    "useDashboardTimeRange": false
+                                },
+                                {
+                                    "durationMs": 86400000,
+                                    "createdTime": "2018-08-22T17:44:54.405Z",
+                                    "isInitialTime": false,
+                                    "grain": 1,
+                                    "useDashboardTimeRange": false
+                                },
+                                {
+                                    "durationMs": 172800000,
+                                    "createdTime": "2018-08-22T17:44:54.405Z",
+                                    "isInitialTime": false,
+                                    "grain": 1,
+                                    "useDashboardTimeRange": false
+                                },
+                                {
+                                    "durationMs": 259200000,
+                                    "createdTime": "2018-08-22T17:44:54.405Z",
+                                    "isInitialTime": false,
+                                    "grain": 1,
+                                    "useDashboardTimeRange": false
+                                },
+                                {
+                                    "durationMs": 604800000,
+                                    "createdTime": "2018-08-22T17:44:54.405Z",
+                                    "isInitialTime": false,
+                                    "grain": 1,
+                                    "useDashboardTimeRange": false
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "resourceType": "microsoft.resources/resourcegroups"
+            },
+            "conditionalVisibility": null
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"object-count\"></a>Objektanzahl"
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"capacity\"></a>Capacity"
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 10,
+            "content": {
+                "chartId": "workbook1efa2216-beb3-4350-ae7c-678c7f1705bf",
+                "version": "MetricsItem/1.0",
+                "size": 0,
+                "timeContext": {
+                    "durationMs": 0,
+                    "endTime": null,
+                    "createdTime": "2018-08-22T18:37:23.963Z",
+                    "isInitialTime": false,
+                    "grain": 1,
+                    "useDashboardTimeRange": false
+                },
+                "timeContextFromParameter": "TimeRange",
+                "resourceType": "microsoft.classicstorage/storageaccounts",
+                "resourceParameter": "StorageResources",
+                "metrics": [
+                    {
+                        "namespace": "microsoft.classicstorage/storageaccounts/services/blob",
+                        "metric": "microsoft.classicstorage/services/blob--ObjectCount",
+                        "aggregation": 8,
+                        "chartType": 2,
+                        "color": "blue"
+                    }
+                ]
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 10,
+            "content": {
+                "chartId": "workbook9cfa71e6-07a5-4b1b-9e25-f4e2be4b5da4",
+                "version": "MetricsItem/1.0",
+                "size": 0,
+                "timeContext": {
+                    "durationMs": 0,
+                    "endTime": null,
+                    "createdTime": "2018-08-22T18:37:23.973Z",
+                    "isInitialTime": false,
+                    "grain": 1,
+                    "useDashboardTimeRange": false
+                },
+                "timeContextFromParameter": "TimeRange",
+                "resourceType": "microsoft.classicstorage/storageaccounts",
+                "resourceParameter": "StorageResources",
+                "metrics": [
+                    {
+                        "namespace": "microsoft.classicstorage/storageaccounts/services/blob",
+                        "metric": "microsoft.classicstorage/services/blob--Capacity",
+                        "aggregation": 8,
+                        "chartType": 2,
+                        "color": "purple"
+                    }
+                ]
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "*Objektanzahl* ist die Anzahl der Blobs mit und ohne ausgeführtem Commit im Blob-Dienst des Speicherkontos."
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "*Kapazität* ist die Größe des vom Blob-Dienst des Speicherkontos genutzten Speichers in Bytes."
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": ""
+            },
+            "conditionalVisibility": null
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"total-requests\"></a>Anzahl von Anforderungen"
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"availability\"></a>Verfügbarkeit"
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 10,
+            "content": {
+                "chartId": "workbook1efa2216-beb3-4350-ae7c-678c7f1705bf",
+                "version": "MetricsItem/1.0",
+                "size": 0,
+                "timeContext": {
+                    "durationMs": 0,
+                    "endTime": null,
+                    "createdTime": "2018-08-22T18:37:23.990Z",
+                    "isInitialTime": false,
+                    "grain": 1,
+                    "useDashboardTimeRange": false
+                },
+                "timeContextFromParameter": "TimeRange",
+                "resourceType": "microsoft.classicstorage/storageaccounts",
+                "resourceParameter": "StorageResources",
+                "metrics": [
+                    {
+                        "namespace": "microsoft.classicstorage/storageaccounts/services/blob",
+                        "metric": "microsoft.classicstorage/services/blob--TotalRequests",
+                        "aggregation": 1,
+                        "chartType": 2,
+                        "color": "blue"
+                    }
+                ]
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 10,
+            "content": {
+                "chartId": "workbook9cfa71e6-07a5-4b1b-9e25-f4e2be4b5da4",
+                "version": "MetricsItem/1.0",
+                "size": 0,
+                "timeContext": {
+                    "durationMs": 0,
+                    "endTime": null,
+                    "createdTime": "2018-08-22T18:37:24.001Z",
+                    "isInitialTime": false,
+                    "grain": 1,
+                    "useDashboardTimeRange": false
+                },
+                "timeContextFromParameter": "TimeRange",
+                "resourceType": "microsoft.classicstorage/storageaccounts",
+                "resourceParameter": "StorageResources",
+                "metrics": [
+                    {
+                        "namespace": "microsoft.classicstorage/storageaccounts/services/blob",
+                        "metric": "microsoft.classicstorage/services/blob--Availability",
+                        "aggregation": 4,
+                        "chartType": 2,
+                        "color": "purple"
+                    }
+                ]
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "*Anzahl von Anforderungen* ist die Anzahl der Anforderungen, die an einen Speicherdienst oder an den angegebenen API-Vorgang gerichtet wurden. Diese Anzahl umfasst erfolgreiche und fehlgeschlagene Anforderungen sowie Anforderungen, die Fehler erzeugt haben."
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "*Verfügbarkeit* ist die Verfügbarkeit (in Prozent) für den Speicherdienst oder den angegebenen API-Vorgang. Die Verfügbarkeit wird berechnet, indem der Wert „TotalBillableRequests“ durch die Anzahl von zutreffenden Anforderungen, einschließlich der, die unerwartete Fehler erzeugt haben, geteilt wird. Alle unerwarteten Fehler verringern die Verfügbarkeit für den Speicherdienst oder den angegebenen API-Vorgang. "
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": ""
+            },
+            "conditionalVisibility": null
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"total-ingress\"></a>Eingang insgesamt"
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"total-egress\"></a>Ausgang insgesamt"
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 10,
+            "content": {
+                "chartId": "workbook1efa2216-beb3-4350-ae7c-678c7f1705bf",
+                "version": "MetricsItem/1.0",
+                "size": 0,
+                "timeContext": {
+                    "durationMs": 0,
+                    "endTime": null,
+                    "createdTime": "2018-08-22T18:37:24.054Z",
+                    "isInitialTime": false,
+                    "grain": 1,
+                    "useDashboardTimeRange": false
+                },
+                "timeContextFromParameter": "TimeRange",
+                "resourceType": "microsoft.classicstorage/storageaccounts",
+                "resourceParameter": "StorageResources",
+                "metrics": [
+                    {
+                        "namespace": "microsoft.classicstorage/storageaccounts/services/blob",
+                        "metric": "microsoft.classicstorage/services/blob--TotalIngress",
+                        "aggregation": 1,
+                        "chartType": 2,
+                        "color": "blue"
+                    }
+                ]
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 10,
+            "content": {
+                "chartId": "workbook9cfa71e6-07a5-4b1b-9e25-f4e2be4b5da4",
+                "version": "MetricsItem/1.0",
+                "size": 0,
+                "timeContext": {
+                    "durationMs": 0,
+                    "endTime": null,
+                    "createdTime": "2018-08-22T18:37:24.062Z",
+                    "isInitialTime": false,
+                    "grain": 1,
+                    "useDashboardTimeRange": false
+                },
+                "timeContextFromParameter": "TimeRange",
+                "resourceType": "microsoft.classicstorage/storageaccounts",
+                "resourceParameter": "StorageResources",
+                "metrics": [
+                    {
+                        "namespace": "microsoft.classicstorage/storageaccounts/services/blob",
+                        "metric": "microsoft.classicstorage/services/blob--TotalEgress",
+                        "aggregation": 1,
+                        "chartType": 2,
+                        "color": "purple"
+                    }
+                ]
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "*Eingang insgesamt* ist die Menge der Eingangsdaten in Byte. Dieser Wert umfasst an Azure Storage gerichtete eingehende Daten von einem externen Client sowie eingehende Daten innerhalb von Azure."
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "*Ausgang insgesamt* ist die Menge der Ausgangsdaten in Byte. Dieser Wert umfasst an Azure Storage gerichtete ausgehende Daten von einem externen Client sowie ausgehende Daten innerhalb von Azure. Der Wert stellt somit keine gebührenpflichtigen ausgehenden Daten dar."
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": ""
+            },
+            "conditionalVisibility": null
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"average-e2e-latency\"></a>Durchschnittliche E2E-Latenz"
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"average-server-latency\"></a>Durchschnittliche Serverlatenz"
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 10,
+            "content": {
+                "chartId": "workbook1efa2216-beb3-4350-ae7c-678c7f1705bf",
+                "version": "MetricsItem/1.0",
+                "size": 0,
+                "timeContext": {
+                    "durationMs": 0,
+                    "endTime": null,
+                    "createdTime": "2018-08-22T18:37:24.020Z",
+                    "isInitialTime": false,
+                    "grain": 1,
+                    "useDashboardTimeRange": false
+                },
+                "timeContextFromParameter": "TimeRange",
+                "resourceType": "microsoft.classicstorage/storageaccounts",
+                "resourceParameter": "StorageResources",
+                "metrics": [
+                    {
+                        "namespace": "microsoft.classicstorage/storageaccounts/services/blob",
+                        "metric": "microsoft.classicstorage/services/blob--AverageE2ELatency",
+                        "aggregation": 4,
+                        "chartType": 2,
+                        "color": "blue"
+                    }
+                ]
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 10,
+            "content": {
+                "chartId": "workbook9cfa71e6-07a5-4b1b-9e25-f4e2be4b5da4",
+                "version": "MetricsItem/1.0",
+                "size": 0,
+                "timeContext": {
+                    "durationMs": 0,
+                    "endTime": null,
+                    "createdTime": "2018-08-22T18:37:24.028Z",
+                    "isInitialTime": false,
+                    "grain": 1,
+                    "useDashboardTimeRange": false
+                },
+                "timeContextFromParameter": "TimeRange",
+                "resourceType": "microsoft.classicstorage/storageaccounts",
+                "resourceParameter": "StorageResources",
+                "metrics": [
+                    {
+                        "namespace": "microsoft.classicstorage/storageaccounts/services/blob",
+                        "metric": "microsoft.classicstorage/services/blob--AverageServerLatency",
+                        "aggregation": 4,
+                        "chartType": 2,
+                        "color": "purple"
+                    }
+                ]
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "*Durchschnittliche E2E-Latenz* ist die durchschnittliche End-to-End-Latenz für erfolgreiche Anforderungen in Millisekunden, die an einen Speicherdienst oder den angegebenen API-Vorgang gesendet wurden. Dieser Wert umfasst die erforderliche Verarbeitungszeit in Azure Storage für das Lesen der Anforderung, das Senden der Antwort und das Empfangen der Antwortbestätigung."
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "*Durchschnittliche Serverlatenz* ist die durchschnittliche Latenz in Millisekunden, die von Azure Storage verwendet wurde, um eine erfolgreiche Anforderung zu verarbeiten. Dieser Wert enthält nicht die in „AverageE2ELatency“ angegebene Netzwerklatenz."
+            },
+            "conditionalVisibility": null,
+            "customWidth": "50"
+        }
+    ]
+}
