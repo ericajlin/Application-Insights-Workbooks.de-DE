@@ -1,0 +1,9 @@
+{
+    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
+    "name": "<span data-ttu-id=\"47454-101\">Vorgänge, die ein Ereignis enthalten</span><span class=\"sxs-lookup\"><span data-stu-id=\"47454-101\">Operations containing an event</span></span>",
+    "description": "<span data-ttu-id=\"47454-102\">Beschreibung hier einfügen</span><span class=\"sxs-lookup\"><span data-stu-id=\"47454-102\">description goes here</span></span>",
+    "icon": "",
+    "tags": [],
+    "author": "Microsoft",
+    "order": 100
+}

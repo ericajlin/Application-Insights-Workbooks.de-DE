@@ -1,0 +1,17 @@
+{
+    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
+    "name": "<span data-ttu-id=\"e60d1-101\">Die wichtigsten Metriken</span><span class=\"sxs-lookup\"><span data-stu-id=\"e60d1-101\">Key Metrics</span></span>",
+    "author": "Microsoft",
+    "galleries": [
+        {
+            "type": "performance-vmclassic",
+            "resourceType": "microsoft.resources/subscriptions/resourcegroups",
+            "order": 200
+        },
+        {
+            "type": "failure-vmclassic",
+            "resourceType": "microsoft.resources/subscriptions/resourcegroups",
+            "order": 200
+        }
+    ]
+}

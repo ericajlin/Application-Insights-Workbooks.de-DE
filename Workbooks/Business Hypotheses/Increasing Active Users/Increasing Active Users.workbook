@@ -1,0 +1,217 @@
+{
+    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json",
+    "version": "Notebook/1.0",
+    "items": [
+        {
+            "type": 1,
+            "content": {
+                "json": "# <a name=\"hypothesis---proposed-change-will-increase-active-users-by-expected-improvement\"></a><span data-ttu-id=\"3c312-101\">Hypothese: _[vorgeschlagene Änderung]_ erhöht die Zahl der aktiven Benutzer um _[erwartete Verbesserung]_</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-101\">Hypothesis - _[proposed change]_ will increase active users by _[expected improvement]_</span></span>\n---\n<span data-ttu-id=\"3c312-102\">Eine gute Hypothese ist das Herzstück der datengesteuerten Entscheidungsfindung.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-102\">A good hypothesis is the heart of data-driven decision making.</span></span> <span data-ttu-id=\"3c312-103\">Mit Hypothesen können Sie Informationen zur Nutzung Ihrer App durch die Kunden in verwertbare Verbesserungsvorschläge verwandeln.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-103\">Hypotheses help you turn information about your customers' usage of your app into actionable proposal for improvements.</span></span> <span data-ttu-id=\"3c312-104\">Verwenden Sie diese Arbeitsmappe, um eine Hypothese zur Verbesserung in Bezug auf die monatlichen (MAU), wöchentlichen (WAU) oder täglichen (DAU) aktiven Benutzer Ihrer App aufzustellen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-104\">Use this workbook to craft a hypothesis about improving the monthly (MAU), weekly (WAU) or daily (DAU) active users of your app.</span></span>"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"problem---problem-statement\"></a><span data-ttu-id=\"3c312-105\">Problem: _[Problembeschreibung]_</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-105\">Problem - _[problem statement]_</span></span>\n<span data-ttu-id=\"3c312-106\">Fügen Sie im Abschnitt eine Zusammenfassung des Problems hinzu.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-106\">Add a summary of the problem in the section.</span></span> <span data-ttu-id=\"3c312-107\">Die Zusammenfassung sollte kurz sein und nicht mehr als einige Sätze umfassen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-107\">The summary should be concise and not more than a few sentences long.</span></span> <span data-ttu-id=\"3c312-108\">Beschreiben Sie das Problem eindeutig, und vermeiden Sie unwichtige Details.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-108\">Clearly state the problem and avoid nonessential details.</span></span> \n\n\n"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"whats-the-active-usage-problem\"></a><span data-ttu-id=\"3c312-109\">Welches Problem besteht hinsichtlich der aktiven Benutzer?</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-109\">What's the active usage problem?</span></span>\n<span data-ttu-id=\"3c312-110\">Ändern Sie die unten angegebenen Parameter, um die aktive Nutzung für die Aktivitäten anzuzeigen, die Sie analysieren.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-110\">Modify the parameters below to show the active usage of activities you are analyzing.</span></span> <span data-ttu-id=\"3c312-111\">Ihr Ziel sollte darin bestehen, in Ihrer App ein Problem mit der aktiven Nutzung zu ermitteln.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-111\">Your goal should be highlighting an active usage problem in your app.</span></span>"
+            }
+        },
+        {
+            "type": 9,
+            "content": {
+                "version": "KqlParameterItem/1.0",
+                "query": "",
+                "crossComponentResources": [],
+                "parameters": [
+                    {
+                        "id": "e552c6ce-183d-4b5d-8405-d60313b3eb8e",
+                        "version": "KqlParameterItem/1.0",
+                        "name": "Activities",
+                        "type": 2,
+                        "description": "<span data-ttu-id=\"3c312-112\">Ein kommagetrennter Satz mit Seitenaufrufen oder Ereignissen, die als Aktivitäten gezählt werden sollen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-112\">A comma separated set of Page views or Events that are to be counted as activities.</span></span> <span data-ttu-id=\"3c312-113\">Oder verwenden Sie „\\*“, um alle Ereignisse einzubeziehen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-113\">Or user '\\*' to include all events.</span></span>",
+                        "isRequired": true,
+                        "multiSelect": true,
+                        "quote": "'",
+                        "delimiter": ",",
+                        "query": "union customEvents, pageViews\r\n| where timestamp >= ago(7d)\r\n| summarize count() by name\r\n| order by count_ desc\r\n| project Id=name, Title=name, Selected=false\r\n| union (\r\ndatatable(Id:string, Title:string, Selected:boolean)[\r\n'*', 'All Events and Page Views', true\r\n]\r\n)"
+                    },
+                    {
+                        "id": "68b8c1f5-9f24-401a-bea4-9739a7438069",
+                        "version": "KqlParameterItem/1.0",
+                        "name": "Metric",
+                        "type": 2,
+                        "description": null,
+                        "isRequired": true,
+                        "multiSelect": null,
+                        "query": "datatable(key:string, display:string) \r\n[ \r\n\"1d\", \"Daily Active Users\", \r\n\"7d\", \"Weekly Active Users\", \r\n\"28d\", \"Monthly Active Users (28 days)\", \r\n\"30d\", \"Monthly Active Users (30 days)\"\r\n] ",
+                        "value": "28d"
+                    },
+                    {
+                        "id": "7813b809-0b92-4531-ad05-90add0674de0",
+                        "version": "KqlParameterItem/1.0",
+                        "name": "TimeRange",
+                        "type": 2,
+                        "description": null,
+                        "isRequired": true,
+                        "multiSelect": null,
+                        "query": "datatable(key:string, display:string) \r\n[ \r\n\"7d\", \"Last 7 days\", \r\n\"14d\", \"Last 14 days\", \r\n\"30d\", \"Last 30 days\", \r\n] ",
+                        "value": "30d"
+                    }
+                ]
+            }
+        },
+        {
+            "type": 3,
+            "content": {
+                "version": "KqlItem/1.0",
+                "query": "let timeRange = {TimeRange};\r\nlet monthDefinition = {Metric};\r\nlet hlls = union customEvents, pageViews\r\n| where timestamp >= startofmonth(now() - timeRange - monthDefinition)\r\n| where name in ({Activities}) or '*' in ({Activities})\r\n| summarize Hlls = hll(user_Id) by bin(timestamp, 1d)\r\n| project DaysToMerge = timestamp, Hlls;\r\nrange d from 0d to timeRange step 1d\r\n| extend Day = startofday(now() - d)\r\n| extend R = range(0d, monthDefinition - 1d, 1d)\r\n| mvexpand R\r\n| extend DaysToMerge = Day - totimespan(R)\r\n| join kind= inner (hlls) on DaysToMerge \r\n| project Day, ThisMonthHlls = Hlls\r\n| summarize ThisMonth = hll_merge(ThisMonthHlls) by Day\r\n| project Day, [\"Monthly Active Users\"] = dcount_hll(ThisMonth) \r\n",
+                "showQuery": false,
+                "size": 0,
+                "aggregation": 5,
+                "showAnnotations": false,
+                "visualization": "timechart"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"as-a-benchmark-whats-the-usage-of-a-similar-feature\"></a><span data-ttu-id=\"3c312-114\">Wie hoch ist die Nutzung für ein ähnliches Feature (Vergleichswert)?</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-114\">As a benchmark, what's the usage of a similar feature?</span></span>\n<span data-ttu-id=\"3c312-115\">Verwenden Sie diesen Abschnitt, um die aktiven Benutzer Ihrer Aktivitäten mit ähnlichen Features zu vergleichen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-115\">Use this section to compare the active users of your activities with similar ones.</span></span> <span data-ttu-id=\"3c312-116\">So können Sie den Kontext für die Verbesserungen festlegen, die Sie durchführen möchten.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-116\">This will help set the context of the improvements you are trying to make.</span></span>"
+            }
+        },
+        {
+            "type": 9,
+            "content": {
+                "version": "KqlParameterItem/1.0",
+                "query": "",
+                "crossComponentResources": [],
+                "parameters": [
+                    {
+                        "id": "35df6f18-6009-4c8c-898a-3d47414ee7cd",
+                        "version": "KqlParameterItem/1.0",
+                        "name": "RelatedActivities",
+                        "type": 2,
+                        "description": "<span data-ttu-id=\"3c312-117\">Wählen Sie den Satz mit benutzerdefinierten Ereignissen und Seitenaufrufen aus, die als Vergleichsaktivitäten (Benchmarks) verwendet werden sollen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-117\">Select the set of custom events and page views to use as benchmark activities.</span></span>",
+                        "isRequired": true,
+                        "multiSelect": true,
+                        "quote": "'",
+                        "delimiter": ",",
+                        "query": "union customEvents, pageViews\r\n| where timestamp >= ago(7d)\r\n| summarize count() by name\r\n| order by count_ desc\r\n| project Id=name, Title=name, Selected=false\r\n| union (\r\ndatatable(Id:string, Title:string, Selected:boolean)[\r\n'*', 'All Events and Page Views', true\r\n]\r\n)"
+                    }
+                ]
+            }
+        },
+        {
+            "type": 3,
+            "content": {
+                "version": "KqlItem/1.0",
+                "query": "let timeRange = {TimeRange};\r\nlet monthDefinition = {Metric};\r\nlet hlls = union customEvents, pageViews\r\n| where timestamp >= startofmonth(now() - timeRange - monthDefinition)\r\n| where name in ({RelatedActivities}) or '*' in ({RelatedActivities})\r\n| summarize Hlls = hll(user_Id) by bin(timestamp, 1d)\r\n| project DaysToMerge = timestamp, Hlls;\r\nrange d from 0d to timeRange step 1d\r\n| extend Day = startofday(now() - d)\r\n| extend R = range(0d, monthDefinition - 1d, 1d)\r\n| mvexpand R\r\n| extend DaysToMerge = Day - totimespan(R)\r\n| join kind= inner (hlls) on DaysToMerge \r\n| project Day, ThisMonthHlls = Hlls\r\n| summarize ThisMonth = hll_merge(ThisMonthHlls) by Day\r\n| project Day, [\"Monthly Active Users\"] = dcount_hll(ThisMonth) \r\n",
+                "showQuery": false,
+                "size": 0,
+                "aggregation": 5,
+                "showAnnotations": false,
+                "visualization": "timechart"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"why-do-you-suspect-active-usage-of-this-feature-is-low\"></a><span data-ttu-id=\"3c312-118\">Warum vermuten Sie, dass die aktive Nutzung für dieses Feature niedrig ist?</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-118\">Why do you suspect active usage of this feature is low?</span></span>\n<span data-ttu-id=\"3c312-119\">Dieser Abschnitt enthält eine Beschreibung der Gründe, warum die Anzahl von aktiven Benutzern ggf. niedrig ist.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-119\">This section provides explanations for why the active users numbers could be low.</span></span> <span data-ttu-id=\"3c312-120\">Mit der von Ihnen vorgeschlagenen Lösung werden einige oder alle der hier ermittelten Probleme behoben.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-120\">The solution you propose will address some or all of the issues identified here.</span></span>"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"what-customer-evidence-do-you-have\"></a><span data-ttu-id=\"3c312-121\">Über welche Kundenberichte verfügen Sie?</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-121\">What customer evidence do you have?</span></span>\n<span data-ttu-id=\"3c312-122\">Fügen Sie Feedback von Kunden hinzu, mit dem das Problem bestätigt und nachgewiesen wird, dass es mit Ihrer vorgeschlagenen Lösung behoben wird.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-122\">Add customer feedback that confirms that the existence of the problem and that your proposed solution will truly address it.</span></span>"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"how-are-your-competitors-solving-this-problem\"></a><span data-ttu-id=\"3c312-123\">Wie lösen Ihre Wettbewerber das Problem?</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-123\">How are your competitors solving this problem?</span></span>\n<span data-ttu-id=\"3c312-124\">Verwenden Sie diesen Abschnitt, um zu veranschaulichen, wie Ihre Wettbewerber dieses Problem in ihren Apps lösen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-124\">Use this section to show how your competitors address this problem in their apps.</span></span>\n"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"open-questions\"></a><span data-ttu-id=\"3c312-125\">Offene Fragen</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-125\">Open Questions</span></span>\n<span data-ttu-id=\"3c312-126\">Listen Sie alle Fragen oder Punkte auf, die noch nicht gelöst sind.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-126\">List all questions or discussions that are still unresolved.</span></span>"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"potential-solution---solution-description\"></a><span data-ttu-id=\"3c312-127\">Mögliche Lösung: _[Lösungsbeschreibung]_</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-127\">Potential solution - _[solution description]_</span></span>\n<span data-ttu-id=\"3c312-128\">Verwenden Sie diesen Abschnitt, um die vorgeschlagene Lösung zu beschreiben.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-128\">Use this section describe the proposed solution.</span></span>\n"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"why-it-will-work\"></a><span data-ttu-id=\"3c312-129\">Warum funktioniert die Lösung?</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-129\">Why it will work?</span></span>\n<span data-ttu-id=\"3c312-130\">Beschreiben Sie Ihre Theorie zum Benutzerverhalten, mit der erreicht wird, dass dieser Vorschlag zu einer höheren Anzahl von aktiven Benutzern führt.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-130\">Describe your theory of user behavior that will result in this proposal leading to greater numbers of active users.</span></span>"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"why-might-it-not-work\"></a><span data-ttu-id=\"3c312-131\">Warum funktioniert die Lösung ggf. nicht?</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-131\">Why might it not work?</span></span>\n<span data-ttu-id=\"3c312-132\">Listen Sie Gründe auf, warum die gesetzten Ziele mit der Lösung ggf. nicht erreicht werden, z. B. andere Theorien für die Ursache des Problems.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-132\">Think about and list reasons why the solution may not result in meeting the goals you have set - e.g. alternate theories for the cause of the problem.</span></span>"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"will-it-affect-other-scenarios\"></a><span data-ttu-id=\"3c312-133\">Ergibt sich eine Auswirkung auf andere Szenarien?</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-133\">Will it affect other scenarios?</span></span>\n<span data-ttu-id=\"3c312-134\">Listen Sie andere Features und Szenarien auf, auf die sich die vorgeschlagene Lösung auswirken kann.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-134\">List the other features and scenarios that could be affected by the proposed solution.</span></span> "
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "## <a name=\"expected-outcome---active-usage-hits-threshold\"></a><span data-ttu-id=\"3c312-135\">Erwartetes Ergebnis: Aktive Nutzung erreicht _[Schwellenwert]_</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-135\">Expected outcome - Active usage hits _[threshold]_</span></span>\n<span data-ttu-id=\"3c312-136\">In diesem Abschnitt sind die messbaren Ergebnisse der Implementierung der vorgeschlagenen Lösung eindeutig aufgeführt.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-136\">This section clearly lists out the measurable outcomes of implementing the proposed solution.</span></span>\n\n"
+            }
+        },
+        {
+            "type": 9,
+            "content": {
+                "version": "KqlParameterItem/1.0",
+                "query": "",
+                "crossComponentResources": [],
+                "parameters": [
+                    {
+                        "id": "ed501437-ae26-454f-bc58-db07649f4c0c",
+                        "version": "KqlParameterItem/1.0",
+                        "name": "Goal",
+                        "type": 1,
+                        "description": null,
+                        "isRequired": true,
+                        "query": "let monthDefinition = {Metric};\r\nunion customEvents, pageViews\r\n| where timestamp >= startofday(now() - monthDefinition + 1d)\r\n| where name in ({Activities}) or '*' in ({Activities})\r\n| summarize MAU=dcount(user_Id)\r\n| extend Goal = round(MAU * 1.1), lg = exp10(bin(log10(MAU), 1) - 1)\r\n| project AdjustedGoal = case(lg <= 0.1, round(MAU * 1.5), round(round(Goal / lg) * lg))"
+                    }
+                ]
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"primary-goal---active-usage-hits-goal\"></a><span data-ttu-id=\"3c312-137\">Hauptziel: Aktive Nutzung erreicht {Goal}</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-137\">Primary Goal - Active usage hits {Goal}</span></span>\n<span data-ttu-id=\"3c312-138\">Das gewählte Standardziel ist ca. 10 % höher als der aktuelle MAU-Wert.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-138\">The default goal chosen is about 10% higher than current MAU.</span></span> <span data-ttu-id=\"3c312-139\">Ändern Sie diesen Wert in das Ziel für Ihre App.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-139\">Change this to the goal for your app.</span></span> "
+            }
+        },
+        {
+            "type": 3,
+            "content": {
+                "version": "KqlItem/1.0",
+                "query": "let timeRange = {TimeRange};\nlet monthDefinition = {Metric};\nlet hlls = union customEvents, pageViews\n| where timestamp >= startofmonth(now() - timeRange - monthDefinition)\n| where name in ({Activities}) or '*' in ({Activities})\n| summarize Hlls = hll(user_Id) by bin(timestamp, 1d)\n| project DaysToMerge = timestamp, Hlls;\nrange d from 0d to timeRange step 1d\n| extend Day = startofday(now() - d)\n| extend R = range(0d, monthDefinition - 1d, 1d)\n| mvexpand R\n| extend DaysToMerge = Day - totimespan(R)\n| join kind= inner (hlls) on DaysToMerge \n| project Day, ThisMonthHlls = Hlls\n| summarize ThisMonth = hll_merge(ThisMonthHlls) by Day\n| project Day, [\"Monthly Active Users\"] = dcount_hll(ThisMonth), Goal = {Goal}\n",
+                "showQuery": false,
+                "size": 0,
+                "aggregation": 5,
+                "showAnnotations": false,
+                "visualization": "timechart"
+            }
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "### <a name=\"other-goals\"></a><span data-ttu-id=\"3c312-140\">Andere Ziele</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-140\">Other Goals</span></span>\n<span data-ttu-id=\"3c312-141\">Listen Sie alle Sekundärziele auf, die Sie in diesem Zusammenhang ggf. erreichen möchten.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3c312-141\">List any secondary goals you may have related to this effort.</span></span> "
+            }
+        }
+    ]
+}

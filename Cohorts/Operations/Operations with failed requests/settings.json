@@ -1,0 +1,9 @@
+{
+    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
+    "name": "<span data-ttu-id=\"b5245-101\">Vorgänge mit fehlerhaften Anforderungen</span><span class=\"sxs-lookup\"><span data-stu-id=\"b5245-101\">Operations with failed requests</span></span>",
+    "description": "<span data-ttu-id=\"b5245-102\">Beschreibung hier einfügen</span><span class=\"sxs-lookup\"><span data-stu-id=\"b5245-102\">description goes here</span></span>",
+    "icon": "",
+    "tags": [],
+    "author": "Microsoft",
+    "order": 200
+}

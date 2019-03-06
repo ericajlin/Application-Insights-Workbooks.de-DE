@@ -1,0 +1,12 @@
+{
+    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
+    "name": "<span data-ttu-id=\"d64f9-101\">Leistungsindikatoranalyse</span><span class=\"sxs-lookup\"><span data-stu-id=\"d64f9-101\">Performance Counter Analysis</span></span>",
+    "author": "Microsoft",
+    "galleries": [
+        {
+            "type": "workbook",
+            "resourceType": "microsoft.insights/components",
+            "order": 200
+        }
+    ]
+}
