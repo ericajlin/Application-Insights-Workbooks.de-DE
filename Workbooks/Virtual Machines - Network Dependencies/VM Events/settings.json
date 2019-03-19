@@ -1,12 +1,13 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "Anmeldungen mit Legacyauthentifizierung",
+    "name": "VM-Ereignisse (Vorschau)",
     "author": "Microsoft",
+    "isPreview": true,
     "galleries": [
         {
             "type": "workbook",
-            "resourceType": "microsoft.aadiam/tenant",
-            "order": 100
+            "resourceType": "microsoft.operationalinsights/workspaces",
+            "order": 200
         }
     ]
 }
