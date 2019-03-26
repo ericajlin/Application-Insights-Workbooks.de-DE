@@ -1,15 +1,12 @@
 {
-    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json",
     "version": "Notebook/1.0",
-    "isLocked": true,
     "items": [
         {
             "type": 1,
             "content": {
                 "json": "# <a name=\"troubleshooting-issues-using-performance-counters\"></a>Behandeln von Problemen mit Leistungsindikatoren"
             },
-            "conditionalVisibility": null,
-            "halfWidth": false
+            "conditionalVisibility": null
         },
         {
             "type": 9,
@@ -95,26 +92,22 @@
                             "allowCustom": null
                         },
                         "value": {
-                            "durationMs": 14400000,
-                            "createdTime": "2018-05-16T21:34:47.842Z",
-                            "isInitialTime": false,
-                            "grain": 1,
-                            "useDashboardTimeRange": false
+                            "durationMs": 14400000
                         }
                     }
                 ],
+                "style": "pills",
+                "queryType": 0,
                 "resourceType": "microsoft.insights/components"
             },
-            "conditionalVisibility": null,
-            "halfWidth": false
+            "conditionalVisibility": null
         },
         {
             "type": 1,
             "content": {
                 "json": "## <a name=\"problem---high-cpu-utilization\"></a>Problem: Hohe CPU-Auslastung\nEine dauerhaft hohe CPU-Auslastung kann zu Leistungs- und Verfügbarkeitsproblemen in Ihrer bereitgestellten Anwendung führen. Dieser Abschnitt enthält Informationen dazu, auf welchen Servern die Auslastung so hoch ist, dass sich dies unter Umständen auf die Zuverlässigkeit Ihrer Anwendung auswirkt. "
             },
-            "conditionalVisibility": null,
-            "halfWidth": false
+            "conditionalVisibility": null
         },
         {
             "type": 9,
@@ -168,10 +161,11 @@
                         "value": ">"
                     }
                 ],
+                "style": "pills",
+                "queryType": 0,
                 "resourceType": "microsoft.insights/components"
             },
-            "conditionalVisibility": null,
-            "halfWidth": false
+            "conditionalVisibility": null
         },
         {
             "type": 3,
@@ -183,6 +177,9 @@
                 "aggregation": 0,
                 "showAnnotations": false,
                 "showAnalytics": false,
+                "noDataMessage": "Looks like this app is not collecting the specified performance counter. More info on collecting counters can be found at: https://docs.microsoft.com/en-us/azure/azure-monitor/app/performance-counters",
+                "timeContextFromParameter": null,
+                "queryType": 0,
                 "resourceType": "microsoft.insights/components",
                 "visualization": "table",
                 "gridSettings": {
@@ -208,24 +205,22 @@
                     ]
                 }
             },
-            "conditionalVisibility": null,
-            "halfWidth": false
+            "conditionalVisibility": null
         },
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"causes\"></a>Ursachen\nEine hohe CPU-Auslastung ist normalerweise ein Hinweis darauf, dass die Last in Ihrem System höher als die Verarbeitungskapazität der bereitgestellten Computeressourcen ist. Dies kann passieren, wenn die Nutzung Ihrer Anwendung zunimmt oder die Leistung der App für die Bereitstellung abfällt.\n\nWeitere mögliche Gründe sind: häufige Aufträge oder geplante Aufgaben auf dem Computer, zu hohe Zahl von Modulen/Plug-Ins/Erweiterungen, Betrieb zu vieler Web-Apps über die Box, Suchmaschinen-Spider und -Bots usw. "
+                "json": "## <a name=\"causes\"></a>Ursachen\nEine hohe CPU-Auslastung ist normalerweise ein Hinweis darauf, dass die Last in Ihrem System höher als die Verarbeitungskapazität der bereitgestellten Computeressourcen ist. Dies kann passieren, wenn die Nutzung Ihrer Anwendung zunimmt oder die Leistung der App für die Bereitstellung abfällt.\n\nWeitere mögliche Ursachen: \n1. Häufige Aufträge oder geplante Aufgaben auf dem Computer \n2. Zu hohe Zahl von Modulen/Plug-Ins/Erweiterungen \n3. Ausführung zu vieler Web-Apps für die zugrunde liegenden Computeressourcen \n4. Suchmaschinen-Spider und -Bots "
             },
-            "conditionalVisibility": null,
-            "halfWidth": false
+            "conditionalVisibility": null
         },
         {
             "type": 1,
             "content": {
                 "json": "## <a name=\"solutions\"></a>Lösungen\nWenn die CPU-Auslastung wirklich auf einer erhöhten Last beruht, ist eine Skalierung die am besten geeignete Antwort:\n* Horizontal hochskalieren: Hinzufügung weiterer Computeressourcen. Wenn die Anwendung über zehn virtuelle Computer bereitgestellt wurde, sollten Sie auf 15 hochskalieren, um die Last für die vorhandenen virtuellen Computer zu verringern.\n* Zentral hochskalieren: Verwendung von Ressourcen höherer Qualität (Upgrade von CPU mit zwei Kernen auf CPU mit acht Kernen)"
             },
-            "conditionalVisibility": null,
-            "halfWidth": false
+            "conditionalVisibility": null
         }
-    ]
+    ],
+    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
 }
