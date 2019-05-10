@@ -4,7 +4,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"storage-account-insights\"></a>Erkenntnisse zu Speicherkonten"
+                "json": "# <a name=\"cosmos-db-insights\"></a>Cosmos DB-Erkenntnisse"
             },
             "conditionalVisibility": null,
             "name": "text - 0"
@@ -15,7 +15,7 @@
                 "version": "KqlParameterItem/1.0",
                 "query": "",
                 "crossComponentResources": [
-                    "value::selected"
+                    "{Subscription}"
                 ],
                 "parameters": [
                     {
@@ -24,7 +24,7 @@
                         "name": "DefaultSubscription_Internal",
                         "type": 1,
                         "isRequired": true,
-                        "query": "where type =~ 'microsoft.compute/virtualmachines'\r\n| take 1\r\n| project subscriptionId",
+                        "query": "where type =~ 'Microsoft.DocumentDB/databaseAccounts'\r\n| take 1\r\n| project subscriptionId",
                         "crossComponentResources": [
                             "value::selected"
                         ],
@@ -44,11 +44,11 @@
                         "delimiter": ",",
                         "query": "summarize by subscriptionId\r\n| project value = strcat(\"/subscriptions/\", subscriptionId), label = subscriptionId, selected = iff(subscriptionId =~ '{DefaultSubscription_Internal}', true, false)\r\n",
                         "crossComponentResources": [
-                            "value::selected"
+                            "value::all"
                         ],
                         "isHiddenWhenLocked": false,
                         "typeSettings": {
-                            "limitSelectTo": 10,
+                            "limitSelectTo": 25,
                             "additionalResourceOptions": []
                         },
                         "timeContextFromParameter": null,
@@ -58,23 +58,23 @@
                     {
                         "id": "e94aafa3-c5d9-4523-89f0-4e87aa754511",
                         "version": "KqlParameterItem/1.0",
-                        "name": "StorageAccounts",
+                        "name": "CosmosDB",
                         "type": 5,
                         "isRequired": true,
                         "multiSelect": true,
                         "quote": "'",
                         "delimiter": ",",
-                        "query": "where type =~ 'microsoft.storage/storageaccounts'\n|project id",
+                        "query": "where type =~ 'Microsoft.DocumentDB/databaseAccounts'\n|project id",
                         "crossComponentResources": [
                             "{Subscription}"
                         ],
                         "value": [
-                            "value::10"
+                            "value::all"
                         ],
                         "isHiddenWhenLocked": false,
                         "typeSettings": {
                             "resourceTypeFilter": {
-                                "microsoft.storage/storageaccounts": true
+                                "microsoft.documentdb/databaseaccounts": true
                             },
                             "limitSelectTo": 100,
                             "additionalResourceOptions": [
@@ -93,88 +93,37 @@
                         "name": "TimeRange",
                         "type": 4,
                         "isRequired": false,
+                        "value": {
+                            "durationMs": 14400000
+                        },
                         "isHiddenWhenLocked": false,
                         "typeSettings": {
                             "selectableValues": [
                                 {
-                                    "durationMs": 300000,
-                                    "createdTime": "2018-08-06T23:52:38.870Z",
-                                    "isInitialTime": false,
-                                    "grain": 1,
-                                    "useDashboardTimeRange": false
+                                    "durationMs": 14400000
                                 },
                                 {
-                                    "durationMs": 900000,
-                                    "createdTime": "2018-08-06T23:52:38.871Z",
-                                    "isInitialTime": false,
-                                    "grain": 1,
-                                    "useDashboardTimeRange": false
+                                    "durationMs": 43200000
                                 },
                                 {
-                                    "durationMs": 1800000,
-                                    "createdTime": "2018-08-06T23:52:38.871Z",
-                                    "isInitialTime": false,
-                                    "grain": 1,
-                                    "useDashboardTimeRange": false
+                                    "durationMs": 86400000
                                 },
                                 {
-                                    "durationMs": 3600000,
-                                    "createdTime": "2018-08-06T23:52:38.871Z",
-                                    "isInitialTime": false,
-                                    "grain": 1,
-                                    "useDashboardTimeRange": false
+                                    "durationMs": 172800000
                                 },
                                 {
-                                    "durationMs": 14400000,
-                                    "createdTime": "2018-08-06T23:52:38.871Z",
-                                    "isInitialTime": false,
-                                    "grain": 1,
-                                    "useDashboardTimeRange": false
+                                    "durationMs": 259200000
                                 },
                                 {
-                                    "durationMs": 43200000,
-                                    "createdTime": "2018-08-06T23:52:38.871Z",
-                                    "isInitialTime": false,
-                                    "grain": 1,
-                                    "useDashboardTimeRange": false
-                                },
-                                {
-                                    "durationMs": 86400000,
-                                    "createdTime": "2018-08-06T23:52:38.871Z",
-                                    "isInitialTime": false,
-                                    "grain": 1,
-                                    "useDashboardTimeRange": false
-                                },
-                                {
-                                    "durationMs": 172800000,
-                                    "createdTime": "2018-08-06T23:52:38.871Z",
-                                    "isInitialTime": false,
-                                    "grain": 1,
-                                    "useDashboardTimeRange": false
-                                },
-                                {
-                                    "durationMs": 259200000,
-                                    "createdTime": "2018-08-06T23:52:38.871Z",
-                                    "isInitialTime": false,
-                                    "grain": 1,
-                                    "useDashboardTimeRange": false
-                                },
-                                {
-                                    "durationMs": 604800000,
-                                    "createdTime": "2018-08-06T23:52:38.871Z",
-                                    "isInitialTime": false,
-                                    "grain": 1,
-                                    "useDashboardTimeRange": false
+                                    "durationMs": 604800000
                                 }
                             ],
                             "allowCustom": null
                         },
-                        "value": {
-                            "durationMs": 14400000
-                        }
+                        "timeContextFromParameter": null
                     }
                 ],
-                "style": "above",
+                "style": "pills",
                 "queryType": 1,
                 "resourceType": "microsoft.resourcegraph/resources"
             },
@@ -185,7 +134,7 @@
             "type": 3,
             "content": {
                 "version": "KqlItem/1.0",
-                "query": "where type == 'microsoft.storage/storageaccounts' |summarize count() by type ",
+                "query": "where type =~ 'Microsoft.DocumentDB/databaseAccounts' | summarize count() by type",
                 "size": 3,
                 "queryType": 1,
                 "resourceType": "microsoft.resourcegraph/resources",
@@ -221,7 +170,15 @@
             },
             "conditionalVisibility": null,
             "customWidth": "20",
-            "name": "query - 20"
+            "name": "query - 18"
+        },
+        {
+            "type": 1,
+            "content": {
+                "json": "<br />\n##### <a name=\"cosmos-db-performance--usage-summary\"></a>Zusammenfassung der Cosmos DB-Leistung und -Nutzung\n"
+            },
+            "conditionalVisibility": null,
+            "name": "text - 2"
         },
         {
             "type": 10,
@@ -233,50 +190,42 @@
                     "durationMs": 0
                 },
                 "timeContextFromParameter": "TimeRange",
-                "resourceType": "microsoft.storage/storageaccounts",
-                "resourceParameter": "StorageAccounts",
+                "resourceType": "microsoft.documentdb/databaseaccounts",
+                "resourceParameter": "CosmosDB",
                 "metrics": [
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-Transactions",
-                        "aggregation": 1,
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-ProvisionedThroughput",
+                        "aggregation": 3,
                         "chartType": 0,
                         "splitBy": null
                     },
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-Availability",
-                        "aggregation": 4
-                    },
-                    {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-Egress",
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-TotalRequestUnits",
                         "aggregation": 1
                     },
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-Ingress",
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-TotalRequests",
+                        "aggregation": 7
+                    },
+                    {
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-DataUsage",
                         "aggregation": 1
                     },
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-SuccessE2ELatency",
-                        "aggregation": 4,
-                        "columnName": "E2E Latency"
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-DocumentCount",
+                        "aggregation": 1
                     },
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-SuccessServerLatency",
-                        "aggregation": 4,
-                        "columnName": "Server Latency"
-                    },
-                    {
-                        "resourceId": "{StorageAccounts}"
+                        "resourceId": "{CosmosDB}"
                     }
                 ],
                 "exportFieldName": "Name",
                 "exportParameterName": "ResourceId",
-                "title": "Storage Summary",
                 "gridFormatting": [
                     {
                         "columnMatch": "Subscription",
@@ -293,26 +242,30 @@
                         }
                     },
                     {
-                        "columnMatch": "Transactions Timeline",
-                        "formatter": 9,
+                        "columnMatch": "Provisioned Throughput (Max)",
+                        "formatter": 1,
                         "formatOptions": {
-                            "min": 0,
-                            "palette": "yellow",
                             "showIcon": true
                         },
                         "numberFormat": {
-                            "unit": 17,
-                            "options": {
-                                "style": "decimal",
-                                "maximumFractionDigits": 2
-                            }
+                            "unit": null,
+                            "options": null
                         }
                     },
                     {
-                        "columnMatch": "Transactions (Sum)",
+                        "columnMatch": "Provisioned Throughput Timeline",
+                        "formatter": 5,
+                        "formatOptions": {
+                            "palette": "orange",
+                            "showIcon": true
+                        }
+                    },
+                    {
+                        "columnMatch": "Total Request Units (Sum)",
                         "formatter": 8,
                         "formatOptions": {
-                            "palette": "yellow",
+                            "min": 0,
+                            "palette": "orange",
                             "showIcon": true
                         },
                         "numberFormat": {
@@ -324,19 +277,10 @@
                         }
                     },
                     {
-                        "columnMatch": "Availability Timeline",
-                        "formatter": 5,
+                        "columnMatch": "Total Request Units Timeline",
+                        "formatter": 9,
                         "formatOptions": {
-                            "min": 90,
-                            "max": 100,
-                            "palette": "redGreen",
-                            "showIcon": true
-                        }
-                    },
-                    {
-                        "columnMatch": "Availability (Average)",
-                        "formatter": 1,
-                        "formatOptions": {
+                            "palette": "orange",
                             "showIcon": true
                         },
                         "numberFormat": {
@@ -347,16 +291,33 @@
                         }
                     },
                     {
-                        "columnMatch": "Egress Timeline",
+                        "columnMatch": "Total Requests (Count)",
+                        "formatter": 8,
+                        "formatOptions": {
+                            "min": 0,
+                            "palette": "yellow",
+                            "showIcon": true
+                        },
+                        "numberFormat": {
+                            "unit": 17,
+                            "options": {
+                                "style": "decimal",
+                                "maximumFractionDigits": 1
+                            }
+                        }
+                    },
+                    {
+                        "columnMatch": "Total Requests Timeline",
                         "formatter": 5,
                         "formatOptions": {
                             "showIcon": true
                         }
                     },
                     {
-                        "columnMatch": "Egress (Sum)",
+                        "columnMatch": "Data Usage (Sum)",
                         "formatter": 8,
                         "formatOptions": {
+                            "min": 0,
                             "palette": "grayBlue",
                             "showIcon": true
                         },
@@ -369,76 +330,34 @@
                         }
                     },
                     {
-                        "columnMatch": "Ingress Timeline",
+                        "columnMatch": "Data Usage Timeline",
                         "formatter": 5,
                         "formatOptions": {
                             "showIcon": true
                         }
                     },
                     {
-                        "columnMatch": "Ingress (Sum)",
-                        "formatter": 8,
+                        "columnMatch": "Document Count (Sum)",
+                        "formatter": 1,
                         "formatOptions": {
-                            "palette": "grayBlue",
                             "showIcon": true
                         },
                         "numberFormat": {
-                            "unit": 2,
-                            "options": {
-                                "style": "decimal",
-                                "maximumFractionDigits": 1
-                            }
+                            "unit": 0,
+                            "options": null
                         }
                     },
                     {
-                        "columnMatch": "E2E Latency Timeline",
-                        "formatter": 5,
-                        "formatOptions": {
-                            "palette": "orange",
-                            "showIcon": true
-                        }
-                    },
-                    {
-                        "columnMatch": "E2E Latency",
-                        "formatter": 8,
-                        "formatOptions": {
-                            "palette": "orange",
-                            "showIcon": true
-                        },
-                        "numberFormat": {
-                            "unit": 23,
-                            "options": {
-                                "style": "decimal",
-                                "maximumFractionDigits": 1
-                            }
-                        }
-                    },
-                    {
-                        "columnMatch": "Server Latency Timeline",
-                        "formatter": 5,
+                        "columnMatch": "Document Count Timeline",
+                        "formatter": 9,
                         "formatOptions": {
                             "showIcon": true
-                        }
-                    },
-                    {
-                        "columnMatch": "Server Latency",
-                        "formatter": 8,
-                        "formatOptions": {
-                            "palette": "orange",
-                            "showIcon": true
-                        },
-                        "numberFormat": {
-                            "unit": 23,
-                            "options": {
-                                "style": "decimal",
-                                "maximumFractionDigits": 1
-                            }
                         }
                     }
                 ],
                 "sortBy": [
                     {
-                        "itemKey": "$gen_heatmap_Transactions (Sum)_2",
+                        "itemKey": "$gen_heatmap_Total Request Units (Sum)_4",
                         "sortOrder": 2
                     }
                 ]
@@ -449,7 +368,7 @@
         {
             "type": 1,
             "content": {
-                "json": "💡 _Klicken Sie auf eine Zeile, um weitere Details zu einem bestimmten Speicherkonto anzuzeigen._\n<br />\n<br />\n<br />\n"
+                "json": "💡 _Klicken Sie auf eine Zeile, um weitere Details zu einem bestimmten Cosmos DB-Konto anzuzeigen._\n<br />\n<br />\n<br />"
             },
             "conditionalVisibility": null,
             "name": "text - 4"
@@ -457,14 +376,14 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"storage-account-details-resourceidname\"></a>Details zum Speicherkonto: _{ResourceId:name}_ "
+                "json": "### <a name=\"cosmos-db-account-details--resourceidname\"></a>Details zum Cosmos DB-Konto: _{ResourceId:name}_ "
             },
             "conditionalVisibility": {
                 "parameterName": "ResourceId",
                 "comparison": "isNotEqualTo",
                 "value": null
             },
-            "name": "text - 20"
+            "name": "text - 17"
         },
         {
             "type": 10,
@@ -473,23 +392,28 @@
                 "version": "MetricsItem/1.0",
                 "size": 0,
                 "timeContext": {
-                    "durationMs": 3600000
+                    "durationMs": 0
                 },
-                "resourceType": "microsoft.storage/storageaccounts",
+                "timeContextFromParameter": "TimeRange",
+                "resourceType": "microsoft.documentdb/databaseaccounts",
                 "resourceParameter": "ResourceId",
                 "metrics": [
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-Transactions",
-                        "aggregation": 1,
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-TotalRequests",
+                        "aggregation": 7,
                         "chartType": 2,
-                        "splitBy": "ResponseType"
+                        "splitBy": "StatusCode",
+                        "color": "green"
+                    },
+                    {
+                        "resourceId": "{ResourceId}"
                     },
                     {
                         "resourceId": "{ResourceId}"
                     }
                 ],
-                "title": "Transactions by Result Type",
+                "title": "Requests by Status Code",
                 "gridFormatting": []
             },
             "conditionalVisibility": {
@@ -509,21 +433,25 @@
                 "timeContext": {
                     "durationMs": 3600000
                 },
-                "resourceType": "microsoft.storage/storageaccounts",
+                "resourceType": "microsoft.documentdb/databaseaccounts",
                 "resourceParameter": "ResourceId",
                 "metrics": [
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-Transactions",
-                        "aggregation": 1,
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-TotalRequests",
+                        "aggregation": 7,
                         "chartType": 2,
-                        "splitBy": "ApiName"
+                        "splitBy": "OperationType",
+                        "color": "orange"
+                    },
+                    {
+                        "resourceId": "{ResourceId}"
                     },
                     {
                         "resourceId": "{ResourceId}"
                     }
                 ],
-                "title": "Transactions by Api Name",
+                "title": "Requests by Operation Type",
                 "gridFormatting": []
             },
             "conditionalVisibility": {
@@ -537,7 +465,7 @@
         {
             "type": 1,
             "content": {
-                "json": "*Transaktionen*: Anzahl von Anforderungen, die an den Speicherdienst gesendet werden. In diesem Diagramm werden die Transaktionen nach Ergebnistypen aufgeteilt, damit Sie einen Überblick über die Fehler in Speicheraufrufen erhalten.\n<br />\n<br />"
+                "json": "*Statuscode* <br/>\n200  OK              400 Ungültige Anforderung     408 Anforderungstimeout         429 Zu viele Anforderungen <br />\n201 Erstellt         401 Nicht autorisiert    409 Konflikt                449 Wiederholung mit  \n204 Kein Inhalt      403 Verboten       412 Vorbedingungsfehler    500 Interner Serverfehler<br />\n                    404 Nicht gefunden       413 Entität zu groß        503 Dienst nicht verfügbar <br /> \n     "
             },
             "conditionalVisibility": {
                 "parameterName": "ResourceId",
@@ -550,7 +478,7 @@
         {
             "type": 1,
             "content": {
-                "json": "*Transaktionen*: Anzahl von Anforderungen, die an den Speicherdienst gesendet werden. In diesem Diagramm werden die Transaktionen nach den aufgerufenen Speicher-APIs aufgeteilt, damit Sie das Auslastungsprofil besser einschätzen können. \n<br />\n<br />"
+                "json": "*Vorgangstyp* -   \n<br />\n<br />"
             },
             "conditionalVisibility": {
                 "parameterName": "ResourceId",
@@ -569,21 +497,24 @@
                 "timeContext": {
                     "durationMs": 3600000
                 },
-                "resourceType": "microsoft.storage/storageaccounts",
+                "resourceType": "microsoft.documentdb/databaseaccounts",
                 "resourceParameter": "ResourceId",
                 "metrics": [
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-Availability",
-                        "aggregation": 4,
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-TotalRequests",
+                        "aggregation": 7,
                         "chartType": 2,
-                        "splitBy": "ApiName"
+                        "splitBy": "CollectionName"
+                    },
+                    {
+                        "resourceId": "{ResourceId}"
                     },
                     {
                         "resourceId": "{ResourceId}"
                     }
                 ],
-                "title": "Availability by Api Name",
+                "title": "Requests by Collection Name",
                 "gridFormatting": []
             },
             "conditionalVisibility": {
@@ -603,21 +534,25 @@
                 "timeContext": {
                     "durationMs": 3600000
                 },
-                "resourceType": "microsoft.storage/storageaccounts",
+                "resourceType": "microsoft.documentdb/databaseaccounts",
                 "resourceParameter": "ResourceId",
                 "metrics": [
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Capacity-UsedCapacity",
-                        "aggregation": 4,
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-TotalRequests",
+                        "aggregation": 7,
                         "chartType": 2,
-                        "splitBy": null
+                        "splitBy": "Region",
+                        "color": "greenDark"
+                    },
+                    {
+                        "resourceId": "{ResourceId}"
                     },
                     {
                         "resourceId": "{ResourceId}"
                     }
                 ],
-                "title": "Used Capacity",
+                "title": "Requests by Region",
                 "gridFormatting": []
             },
             "conditionalVisibility": {
@@ -631,7 +566,7 @@
         {
             "type": 1,
             "content": {
-                "json": "Verfügbarkeit: Die Verfügbarkeit in Prozent für den Speicherdienst. Zur Berechnung der Verfügbarkeit wird der Wert der gesamten gebührenpflichtigen Anforderungen durch die Anzahl entsprechender Anforderungen geteilt. Dabei werden auch Anforderungen einbezogen, die zu unerwarteten Fehlern geführt haben. \n<br />\n<br />"
+                "json": "Anforderungen nach Sammlungsname\n<br />\n<br />"
             },
             "conditionalVisibility": {
                 "parameterName": "ResourceId",
@@ -644,7 +579,7 @@
         {
             "type": 1,
             "content": {
-                "json": "*Verwendete Kapazität*: Die vom Speicherkonto beanspruchte Speichermenge. Bei Standardspeicherkonten ist das die Summe der von Blob, Table, File und Queue beanspruchten Kapazität. Bei Storage Premium- und Blob Storage-Konten ist es der gleiche Wert wie für „BlobCapacity“. \n<br />\n<br />"
+                "json": "Anforderungen nach Region\n<br />\n<br />"
             },
             "conditionalVisibility": {
                 "parameterName": "ResourceId",
@@ -663,21 +598,29 @@
                 "timeContext": {
                     "durationMs": 3600000
                 },
-                "resourceType": "microsoft.storage/storageaccounts",
+                "resourceType": "microsoft.documentdb/databaseaccounts",
                 "resourceParameter": "ResourceId",
                 "metrics": [
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-SuccessE2ELatency",
-                        "aggregation": 4,
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-IndexUsage",
+                        "aggregation": 1,
                         "chartType": 2,
-                        "splitBy": "ApiName"
+                        "splitBy": null
+                    },
+                    {
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-DataUsage",
+                        "aggregation": 1
+                    },
+                    {
+                        "resourceId": "{ResourceId}"
                     },
                     {
                         "resourceId": "{ResourceId}"
                     }
                 ],
-                "title": "Success End-to-end Latency",
+                "title": "Data and Index Usage",
                 "gridFormatting": []
             },
             "conditionalVisibility": {
@@ -697,21 +640,29 @@
                 "timeContext": {
                     "durationMs": 3600000
                 },
-                "resourceType": "microsoft.storage/storageaccounts",
+                "resourceType": "microsoft.documentdb/databaseaccounts",
                 "resourceParameter": "ResourceId",
                 "metrics": [
                     {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-SuccessServerLatency",
-                        "aggregation": 4,
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-DocumentCount",
+                        "aggregation": 1,
                         "chartType": 2,
-                        "splitBy": "ApiName"
+                        "splitBy": null
+                    },
+                    {
+                        "namespace": "microsoft.documentdb/databaseaccounts",
+                        "metric": "microsoft.documentdb/databaseaccounts-Requests-DocumentQuota",
+                        "aggregation": 1
+                    },
+                    {
+                        "resourceId": "{ResourceId}"
                     },
                     {
                         "resourceId": "{ResourceId}"
                     }
                 ],
-                "title": "Success Server Latency",
+                "title": "Document Count and Quota",
                 "gridFormatting": []
             },
             "conditionalVisibility": {
@@ -725,7 +676,7 @@
         {
             "type": 1,
             "content": {
-                "json": "*E2E-Wartezeit bei Erfolg*: Die durchschnittliche End-to-End-Wartezeit für erfolgreiche Anforderungen, die an einen Speicherdienst oder den angegebenen API-Vorgang gesendet wurden. Dieser Wert umfasst die erforderliche Verarbeitungszeit in Azure Storage für das Lesen der Anforderung, das Senden der Antwort und das Empfangen der Antwortbestätigung. \n<br />\n<br />"
+                "json": "*Daten und Indexverwendung* -  \n<br />\n<br />"
             },
             "conditionalVisibility": {
                 "parameterName": "ResourceId",
@@ -738,7 +689,7 @@
         {
             "type": 1,
             "content": {
-                "json": "*Serverwartezeit bei Erfolg*: Die durchschnittliche Verarbeitungszeit einer erfolgreichen Anforderung durch Azure Storage. Dieser Wert beinhaltet nicht die in „SuccessE2ELatency“ angegebene Netzwerklatenz. \n<br />\n<br />"
+                "json": "*Dokumentanzahl und Kontingent* -  \n<br />\n<br />"
             },
             "conditionalVisibility": {
                 "parameterName": "ResourceId",
@@ -747,100 +698,6 @@
             },
             "customWidth": "50",
             "name": "text - 16"
-        },
-        {
-            "type": 10,
-            "content": {
-                "chartId": "workbook2d8fc4b8-3c85-44e4-8dd6-b99f7561ca13",
-                "version": "MetricsItem/1.0",
-                "size": 0,
-                "timeContext": {
-                    "durationMs": 3600000
-                },
-                "resourceType": "microsoft.storage/storageaccounts",
-                "resourceParameter": "ResourceId",
-                "metrics": [
-                    {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-Ingress",
-                        "aggregation": 1,
-                        "chartType": 2,
-                        "splitBy": "ApiName"
-                    },
-                    {
-                        "resourceId": "{ResourceId}"
-                    }
-                ],
-                "title": "Ingress by Api Name",
-                "gridFormatting": []
-            },
-            "conditionalVisibility": {
-                "parameterName": "ResourceId",
-                "comparison": "isNotEqualTo",
-                "value": null
-            },
-            "customWidth": "50",
-            "name": "metric - 17"
-        },
-        {
-            "type": 10,
-            "content": {
-                "chartId": "workbook2d8fc4b8-3c85-44e4-8dd6-b99f7561ca13",
-                "version": "MetricsItem/1.0",
-                "size": 0,
-                "timeContext": {
-                    "durationMs": 3600000
-                },
-                "resourceType": "microsoft.storage/storageaccounts",
-                "resourceParameter": "ResourceId",
-                "metrics": [
-                    {
-                        "namespace": "microsoft.storage/storageaccounts",
-                        "metric": "microsoft.storage/storageaccounts-Transaction-Egress",
-                        "aggregation": 1,
-                        "chartType": 2,
-                        "splitBy": "ApiName"
-                    },
-                    {
-                        "resourceId": "{ResourceId}"
-                    }
-                ],
-                "title": "Egress by Api Name",
-                "gridFormatting": []
-            },
-            "conditionalVisibility": {
-                "parameterName": "ResourceId",
-                "comparison": "isNotEqualTo",
-                "value": null
-            },
-            "customWidth": "50",
-            "name": "metric - 18"
-        },
-        {
-            "type": 1,
-            "content": {
-                "json": "*Eingehend*: Die eingehende Datenmenge. Dieser Wert umfasst an Azure Storage gerichtete eingehende Daten von einem externen Client sowie eingehende Daten innerhalb von Azure. \n<br />\n<br />\n"
-            },
-            "conditionalVisibility": {
-                "parameterName": "ResourceId",
-                "comparison": "isNotEqualTo",
-                "value": null
-            },
-            "customWidth": "50",
-            "name": "text - 19"
-        },
-        {
-            "type": 1,
-            "content": {
-                "json": "*Ausgehend*: Die ausgehende Datenmenge. Dieser Wert umfasst an Azure Storage gerichtete ausgehende Daten von einem externen Client sowie ausgehende Daten innerhalb von Azure. Der Wert stellt somit keine gebührenpflichtigen ausgehenden Daten dar. \n<br />\n<br />"
-            },
-            "conditionalVisibility": {
-                "parameterName": "ResourceId",
-                "comparison": "isNotEqualTo",
-                "value": null
-            },
-            "customWidth": "50",
-            "name": "text - 20"
         }
     ],
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
