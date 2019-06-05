@@ -1,10 +1,15 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"12319-101\">Offene Ports</span><span class=\"sxs-lookup\"><span data-stu-id=\"12319-101\">Open Ports</span></span>",
+    "name": "<span data-ttu-id=\"07995-101\">Offene Ports</span><span class=\"sxs-lookup\"><span data-stu-id=\"07995-101\">Open Ports</span></span>",
     "author": "Microsoft",
     "galleries": [
         {
             "type": "workbook",
+            "resourceType": "microsoft.operationalinsights/workspaces",
+            "order": 175
+        },
+        {
+            "type": "vm-insights",
             "resourceType": "microsoft.operationalinsights/workspaces",
             "order": 175
         }
