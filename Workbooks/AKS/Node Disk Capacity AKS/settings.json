@@ -1,11 +1,11 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "Datenträgerkapazität",
+    "name": "Kapazität des Knotendatenträgers",
     "author": "Microsoft",
     "galleries": [
         {
             "type": "workbook",
-            "resourceType": "microsoft.operationalinsights/workspaces",
+            "resourceType": "Microsoft.ContainerService/managedClusters",
             "order": 100
         }
     ]
