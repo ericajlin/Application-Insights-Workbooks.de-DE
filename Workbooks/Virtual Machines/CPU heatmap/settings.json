@@ -1,6 +1,13 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"28db0-101\">CPU-Wärmebild</span><span class=\"sxs-lookup\"><span data-stu-id=\"28db0-101\">CPU Heatmap</span></span>",
+    "name": "<span data-ttu-id=\"87477-101\">Wärmebild zur CPU-Nutzung</span><span class=\"sxs-lookup\"><span data-stu-id=\"87477-101\">CPU Usage Heatmap</span></span>",
     "author": "Microsoft",
-    "galleries": []
+    "galleries": [
+        {
+            "type": "workbook",
+            "resourceType": "Azure Monitor",
+            "categoryKey": "azureMonitorVirtualMachines",
+            "order": 300
+        }
+    ]
 }
