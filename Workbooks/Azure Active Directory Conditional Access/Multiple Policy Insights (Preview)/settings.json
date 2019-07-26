@@ -1,13 +1,13 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "Wärmebild zur CPU-Nutzung",
+    "name": "Multiple Policy Insights (Preview)",
     "author": "Microsoft",
+    "isPreview": true,
     "galleries": [
         {
             "type": "workbook",
-            "resourceType": "Azure Monitor",
-            "categoryKey": "azureMonitorVirtualMachines",
-            "order": 300
+            "resourceType": "microsoft.aadiam/tenant",
+            "order": 51
         }
     ]
 }

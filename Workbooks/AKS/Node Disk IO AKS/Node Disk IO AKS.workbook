@@ -496,7 +496,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>Millisekunden pro {unit:label} gelesen</h3>"
+                "json": "<h3>Millisekunden pro {unit:label} für Lesevorgänge</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy - Copy - Copy"
@@ -504,7 +504,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>Millisekunden pro {unit:label} geschrieben</h3>"
+                "json": "<h3>Millisekunden pro {unit:label} für Schreibvorgänge</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy - Copy - Copy - Copy"
