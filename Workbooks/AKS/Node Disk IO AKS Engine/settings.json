@@ -1,8 +1,13 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"6b105-101\">Knotendatenträger-E/A</span><span class=\"sxs-lookup\"><span data-stu-id=\"6b105-101\">Node Disk IO</span></span>",
+    "name": "<span data-ttu-id=\"7fbb3-101\">Knotendatenträger-E/A</span><span class=\"sxs-lookup\"><span data-stu-id=\"7fbb3-101\">Node Disk IO</span></span>",
     "author": "Microsoft",
     "galleries": [
+        {
+            "type": "container-insights",
+            "resourceType": "microsoft.operationalinsights/workspaces",
+            "order": 200
+        },
         {
             "type": "workbook",
             "resourceType": "microsoft.operationalinsights/workspaces",
