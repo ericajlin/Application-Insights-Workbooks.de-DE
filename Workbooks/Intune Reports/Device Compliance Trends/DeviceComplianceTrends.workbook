@@ -4,7 +4,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<a name=\"device-compliance\"></a><span data-ttu-id=\"3ffec-101\">Gerätekompatibilität</span><span class=\"sxs-lookup\"><span data-stu-id=\"3ffec-101\">Device compliance</span></span>\n=="
+                "json": "### <a name=\"device-compliance\"></a>Gerätekompatibilität\n"
             },
             "name": "Device Compliance Title"
         },
