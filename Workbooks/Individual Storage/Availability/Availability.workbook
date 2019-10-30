@@ -49,7 +49,7 @@
                         "name": "TimeRange",
                         "label": "Time Range",
                         "type": 4,
-                        "description": "<span data-ttu-id=\"f5487-101\">Der zu analysierende Zeitbereich</span><span class=\"sxs-lookup\"><span data-stu-id=\"f5487-101\">The time range to analyze</span></span>",
+                        "description": "Der zu analysierende Zeitbereich",
                         "isRequired": true,
                         "value": {
                             "durationMs": 14400000
@@ -89,7 +89,8 @@
                                 {
                                     "durationMs": 1209600000
                                 }
-                            ]
+                            ],
+                            "allowCustom": true
                         }
                     }
                 ],

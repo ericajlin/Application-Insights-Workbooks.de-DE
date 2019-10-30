@@ -1,8 +1,13 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"a8923-101\">Übersicht</span><span class=\"sxs-lookup\"><span data-stu-id=\"a8923-101\">Overview</span></span>",
+    "name": "Übersicht",
     "author": "Microsoft",
     "galleries": [
+        {
+            "type": "workbook",
+            "resourceType": "Azure Monitor",
+            "order": 100
+        },
         {
             "type": "cosmosdb-insights",
             "resourceType": "Azure Monitor",
