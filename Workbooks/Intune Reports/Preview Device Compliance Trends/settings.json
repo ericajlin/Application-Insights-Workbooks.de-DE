@@ -1,12 +1,13 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "Erkenntnisse zum bedingten Zugriff (Vorschau)",
+    "name": "Gerätekompatibilitätstrends",
     "author": "Microsoft",
+    "isPreview": true,
     "galleries": [
         {
             "type": "workbook",
-            "resourceType": "microsoft.aadiam/tenant",
-            "order": 51
+            "resourceType": "microsoft.intune/reports",
+            "order": 100
         }
     ]
 }
