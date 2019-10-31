@@ -21,7 +21,7 @@
                         "version": "KqlParameterItem/1.0",
                         "name": "Date",
                         "type": 4,
-                        "description": "Wählen Sie den Datumsbereich aus.",
+                        "description": "Auswählen des Datumsbereichs",
                         "isRequired": true,
                         "value": {
                             "durationMs": 2592000000
