@@ -278,7 +278,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"mitigation\"></a>Lösung\nVerwenden Sie diesen Abschnitt, um die Wiederherstellungsschritte für bekannte Probleme aufzulisten. Dies ermöglicht die Freigabe von Informationen für Personen, die zu späteren Zeitpunkten Probleme untersuchen. "
+                "json": "## <a name=\"mitigation\"></a>Lösung\nVerwenden Sie diesen Abschnitt, um die Wiederherstellungsschritte für bekannte Probleme aufzulisten. Dies ermöglicht die Freigabe von Informationen für Personen, die Probleme zu einem späteren Zeitpunkt untersuchen. "
             },
             "conditionalVisibility": null,
             "halfWidth": false
