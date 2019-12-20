@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"d5976-101\">Verbindungsübersicht</span><span class=\"sxs-lookup\"><span data-stu-id=\"d5976-101\">Connections Overview</span></span>",
+    "name": "Verbindungsübersicht",
     "author": "Microsoft",
     "galleries": [
         {

@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"def2b-101\">Anmeldungen nach Status des bedingten Zugriffs</span><span class=\"sxs-lookup\"><span data-stu-id=\"def2b-101\">Sign-ins by Conditional Access Status</span></span>",
+    "name": "Anmeldungen nach Status des bedingten Zugriffs",
     "author": "Microsoft",
     "galleries": [
         {

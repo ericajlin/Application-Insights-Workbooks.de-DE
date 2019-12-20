@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"cedf7-101\">Abhängigkeitsfehler</span><span class=\"sxs-lookup\"><span data-stu-id=\"cedf7-101\">Dependency Failures</span></span>",
+    "name": "Abhängigkeitsfehler",
     "author": "Microsoft",
     "galleries": [
         {

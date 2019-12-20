@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"0930c-101\">Kontextbereich für Datenträger-E/A</span><span class=\"sxs-lookup\"><span data-stu-id=\"0930c-101\">Disk IO Context Pane</span></span>",
+    "name": "Kontextbereich für Datenträger-E/A",
     "author": "Microsoft",
     "isPreview": true,
     "galleries": [

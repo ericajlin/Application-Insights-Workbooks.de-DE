@@ -6,7 +6,7 @@
         {
             "type": 1,
             "content": {
-                "json": "# <a name=\"troubleshooting-request-failures\"></a><span data-ttu-id=\"dc027-101\">Problembehandlung bei Anforderungsfehlern</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-101\">Troubleshooting Request Failures</span></span>\n<span data-ttu-id=\"dc027-102\">Mit diesem Leitfaden zur Problembehandlung können Sie Fehler in den Webanforderungen Ihrer Anwendung identifizieren.</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-102\">This troubleshooting guide helps you identify failures in your application's web requests.</span></span> "
+                "json": "# <a name=\"troubleshooting-request-failures\"></a>Problembehandlung bei Anforderungsfehlern\nMit diesem Leitfaden zur Problembehandlung können Sie Fehler in den Webanforderungen Ihrer Anwendung identifizieren. "
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -183,7 +183,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"dc027-103\">Legen Sie die obigen Parameter fest, um Ihren Analysesatz zu optimieren.</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-103\">Set the parameters above to tune your analysis set.</span></span> <span data-ttu-id=\"dc027-104\">Verwenden Sie oben den Parameter `Show`, um nur vorhandene oder neue Fehler anzuzeigen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-104\">Use the `Show` parameter above to see only existing or new failures.</span></span> <span data-ttu-id=\"dc027-105\">Mit dem Vergleichsparameter `UseComparisionTimeRange` wird das Zeitfenster festgelegt, in dem nach vorhandenen Fehlern gesucht wird.</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-105\">The comparision `UseComparisionTimeRange` parameter sets the window of time to look for existing failures.</span></span> <span data-ttu-id=\"dc027-106\">Mit den Parametern `Requests` und `ResultCodes` können Sie auf eine geringere Zahl von Problembereichen herunterfiltern.</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-106\">`Requests` and `ResultCodes` parameters allow you to filter down to a smaller set of issues.</span></span>"
+                "json": "Legen Sie die obigen Parameter fest, um Ihren Analysesatz zu optimieren. Verwenden Sie oben den Parameter `Show`, um nur vorhandene oder neue Fehler anzuzeigen. Mit dem Vergleichsparameter `UseComparisionTimeRange` wird das Zeitfenster festgelegt, in dem nach vorhandenen Fehlern gesucht wird. Mit den Parametern `Requests` und `ResultCodes` können Sie auf eine geringere Zahl von Problembereichen herunterfiltern."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -191,7 +191,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"failure-trend\"></a><span data-ttu-id=\"dc027-107\">Fehlertrend</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-107\">Failure Trend</span></span>\n<span data-ttu-id=\"dc027-108\">Im Diagramm unten wird der Trend für die Anforderungsfehler in Abhängigkeit des gewählten Zeitbereichs angezeigt.</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-108\">The chart below shows the trend of request failures over your chosen time range.</span></span> <span data-ttu-id=\"dc027-109\">Die Anzeige ist nach neuen und vorhandenen Fehlern unterteilt.</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-109\">It is split by new and existing failures.</span></span> "
+                "json": "## <a name=\"failure-trend\"></a>Fehlertrend\nIm Diagramm unten wird der Trend für die Anforderungsfehler in Abhängigkeit des gewählten Zeitbereichs angezeigt. Die Anzeige ist nach neuen und vorhandenen Fehlern unterteilt. "
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -215,7 +215,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"failure-details\"></a><span data-ttu-id=\"dc027-110\">Fehlerdetails</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-110\">Failure Details</span></span>"
+                "json": "## <a name=\"failure-details\"></a>Fehlerdetails"
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -223,7 +223,7 @@
         {
             "type": 1,
             "content": {
-                "json": "\n<span data-ttu-id=\"dc027-111\">🔸 Neuer Fehler 🔹 Vorhandener Fehler</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-111\">🔸 New Failure 🔹 Existing Failure</span></span>"
+                "json": "\n🔸 Neuer Fehler 🔹 Vorhandener Fehler"
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -278,7 +278,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"mitigation\"></a><span data-ttu-id=\"dc027-112\">Lösung</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-112\">Mitigation</span></span>\n<span data-ttu-id=\"dc027-113\">Verwenden Sie diesen Abschnitt, um die Wiederherstellungsschritte für bekannte Probleme aufzulisten.</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-113\">Use this section to list out the recovery steps for known issues.</span></span> <span data-ttu-id=\"dc027-114\">Dies ermöglicht die Freigabe von Informationen für Personen, die Probleme zu einem späteren Zeitpunkt untersuchen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-114\">This allows sharing of information with future issue investigators.</span></span> "
+                "json": "## <a name=\"mitigation\"></a>Lösung\nVerwenden Sie diesen Abschnitt, um die Wiederherstellungsschritte für bekannte Probleme aufzulisten. Dies ermöglicht die Freigabe von Informationen für Personen, die Probleme zu einem späteren Zeitpunkt untersuchen. "
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -286,7 +286,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"customizing-your-troubleshooting-guide\"></a><span data-ttu-id=\"dc027-115\">Anpassen des Leitfadens zur Problembehandlung</span><span class=\"sxs-lookup\"><span data-stu-id=\"dc027-115\">Customizing your Troubleshooting Guide</span></span>\n```\n1. Start editing this TSG by clicking on the 'Edit' button on the toolbar on top. \n2. Use the edit buttons on bottom-right of markdown control to update it's contents. \n3. Update the parameters to tune your analysis set.\n4. You can also update the underlying query or grid properties to personalize the analysis/view.\n5. If you want to have two sections for different performance counters, use the clone button at the bottom toolbar of a control. Use the ↑ or ↓ buttons to move the controls up or down.\n```\n"
+                "json": "## <a name=\"customizing-your-troubleshooting-guide\"></a>Anpassen des Leitfadens zur Problembehandlung\n```\n1. Start editing this TSG by clicking on the 'Edit' button on the toolbar on top. \n2. Use the edit buttons on bottom-right of markdown control to update it's contents. \n3. Update the parameters to tune your analysis set.\n4. You can also update the underlying query or grid properties to personalize the analysis/view.\n5. If you want to have two sections for different performance counters, use the clone button at the bottom toolbar of a control. Use the ↑ or ↓ buttons to move the controls up or down.\n```\n"
             },
             "conditionalVisibility": null,
             "halfWidth": false

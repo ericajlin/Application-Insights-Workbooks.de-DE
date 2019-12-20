@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"fefff-101\">Segmentierter Trichter</span><span class=\"sxs-lookup\"><span data-stu-id=\"fefff-101\">Segmented Funnel</span></span>",
+    "name": "Segmentierter Trichter",
     "author": "Microsoft",
     "galleries": [
         {

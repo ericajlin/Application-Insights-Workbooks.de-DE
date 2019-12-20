@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"b0e36-101\">Vermerkdauer mit Zeitraum „N“</span><span class=\"sxs-lookup\"><span data-stu-id=\"b0e36-101\">N-Period Retention</span></span>",
+    "name": "Vermerkdauer mit Zeitraum „N“",
     "author": "Microsoft",
     "galleries": [
         {

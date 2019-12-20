@@ -6,7 +6,7 @@
         {
             "type": 1,
             "content": {
-                "json": "# <a name=\"new-failures-analysis\"></a><span data-ttu-id=\"8b5f1-101\">Neue Fehleranalyse</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-101\">New Failures Analysis</span></span>\n<span data-ttu-id=\"8b5f1-102\">Mit dieser Arbeitsmappe können Sie neue Fehler identifizieren, die in Ihrer App ggf. entstehen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-102\">This workbook will help you identify any new failures that may have begun in your app.</span></span> <span data-ttu-id=\"8b5f1-103\">Die Fehler Ihrer App werden anhand von drei Telemetriequellen untersucht:</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-103\">It looks at your app's failures from three telemetry sources:</span></span>\n* <span data-ttu-id=\"8b5f1-104\">Von der App bereitgestellte Anforderungen</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-104\">Requests served by app</span></span>\n* <span data-ttu-id=\"8b5f1-105\">Ausnahmen in Ihrer App</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-105\">Exceptions in your app</span></span>\n* <span data-ttu-id=\"8b5f1-106\">Von Ihrer App durchgeführte Abhängigkeitsaufrufe</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-106\">Dependency calls made by you app</span></span>\n\n<span data-ttu-id=\"8b5f1-107\">Der Bericht enthält eine Reihe von Informationen, mit denen Sie diese neuen Probleme selektieren und diagnostizieren können.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-107\">The report provides you with a bunch of information to help you triage and diagnose these new issues.</span></span> <span data-ttu-id=\"8b5f1-108\">Verwenden Sie ihn zusammen mit dem Fehlerbericht in App Insights, um die Fehler Ihrer App zu verstehen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-108\">Use it in conjunction with the Failure report in App Insights to understand the failures in your app.</span></span>"
+                "json": "# <a name=\"new-failures-analysis\"></a>Neue Fehleranalyse\nMit dieser Arbeitsmappe können Sie neue Fehler identifizieren, die in Ihrer App ggf. entstehen. Die Fehler Ihrer App werden anhand von drei Telemetriequellen untersucht:\n* Von der App bereitgestellte Anforderungen\n* Ausnahmen in Ihrer App\n* Von Ihrer App durchgeführte Abhängigkeitsaufrufe\n\nDer Bericht enthält eine Reihe von Informationen, mit denen Sie diese neuen Probleme selektieren und diagnostizieren können. Verwenden Sie ihn zusammen mit dem Fehlerbericht in App Insights, um die Fehler Ihrer App zu verstehen."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -78,7 +78,7 @@
         {
             "type": 1,
             "content": {
-                "json": "---\n## <a name=\"request-failures-analysis\"></a><span data-ttu-id=\"8b5f1-109\">Analyse von Anforderungsfehlern</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-109\">Request Failures Analysis</span></span>\n"
+                "json": "---\n## <a name=\"request-failures-analysis\"></a>Analyse von Anforderungsfehlern\n"
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -123,7 +123,7 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"failures-rates\"></a><span data-ttu-id=\"8b5f1-110\">Fehlerraten</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-110\">Failures Rates</span></span>\n<span data-ttu-id=\"8b5f1-111\">In diesem Abschnitt erhalten Sie Informationen dazu, wie sich Ihre Anforderungsfehlerraten im Laufe der Zeit ändern – unterteilt nach neuen und vorhandenen Fehlern.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-111\">This section will help you see how your request failure rates change over time -- segmented by new vs. existing failures.</span></span>"
+                "json": "### <a name=\"failures-rates\"></a>Fehlerraten\nIn diesem Abschnitt erhalten Sie Informationen dazu, wie sich Ihre Anforderungsfehlerraten im Laufe der Zeit ändern – unterteilt nach neuen und vorhandenen Fehlern."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -145,7 +145,7 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"requests-volume\"></a><span data-ttu-id=\"8b5f1-112\">Anforderungsvolumen</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-112\">Requests Volume</span></span>\n<span data-ttu-id=\"8b5f1-113\">In diesem Diagramm sind das Anforderungsvolumen und die Last in Abhängigkeit der Zeit angegeben.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-113\">This chart shows you request volumes or load over time.</span></span> <span data-ttu-id=\"8b5f1-114\">Änderungen beim Volumen können sich auf Fehler und die Leistung auswirken.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-114\">Changes in volume can impact failures and performance.</span></span> <span data-ttu-id=\"8b5f1-115\">Mit diesen Daten wird der Kontext festgelegt, in dem die Fehler aufgetreten sind.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-115\">This data will set the context in which any failures have occured.</span></span>"
+                "json": "### <a name=\"requests-volume\"></a>Anforderungsvolumen\nIn diesem Diagramm sind das Anforderungsvolumen und die Last in Abhängigkeit der Zeit angegeben. Änderungen beim Volumen können sich auf Fehler und die Leistung auswirken. Mit diesen Daten wird der Kontext festgelegt, in dem die Fehler aufgetreten sind."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -167,7 +167,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"request-details\"></a><span data-ttu-id=\"8b5f1-116\">Anforderungsdetails</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-116\">Request Details</span></span>\n<span data-ttu-id=\"8b5f1-117\">In dieser Tabelle sind alle fehlerhaften Anforderungen Ihrer App und die zugehörigen Ergebniscodes aufgeführt – sortiert nach betroffenen Benutzern.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-117\">This table shows all failing requests in your app and their result codes - sorted by users impacted.</span></span> <span data-ttu-id=\"8b5f1-118\">Anhand dieser Informationen wissen Sie, welche unterschiedlichen Fehler für Ihre App bestehen und welchen Schweregrad sie aufweisen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-118\">This information will help you know the various failures in your app and their severity.</span></span> <span data-ttu-id=\"8b5f1-119\">Im Bericht ist auch angegeben, ob ein Fehler neu ist oder bereits bestanden hat, damit Sie sehen können, wenn Fehler gerade erst aufgetreten sind. Dies sind meist die interessantesten Fehler.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-119\">The report also indicates if a failure is new or existing - so you see failures just started happening -- usually the most interesting ones.</span></span>"
+                "json": "## <a name=\"request-details\"></a>Anforderungsdetails\nIn dieser Tabelle sind alle fehlerhaften Anforderungen Ihrer App und die zugehörigen Ergebniscodes aufgeführt – sortiert nach betroffenen Benutzern. Anhand dieser Informationen wissen Sie, welche unterschiedlichen Fehler für Ihre App bestehen und welchen Schweregrad sie aufweisen. Im Bericht ist auch angegeben, ob ein Fehler neu ist oder bereits bestanden hat, damit Sie sehen können, wenn Fehler gerade erst aufgetreten sind. Dies sind meist die interessantesten Fehler."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -175,7 +175,7 @@
         {
             "type": 1,
             "content": {
-                "json": "\n<span data-ttu-id=\"8b5f1-120\">🔸 Neuer Fehler 🔹 Vorhandener Fehler</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-120\">🔸 New Failure 🔹 Existing Failure</span></span>"
+                "json": "\n🔸 Neuer Fehler 🔹 Vorhandener Fehler"
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -219,7 +219,7 @@
         {
             "type": 1,
             "content": {
-                "json": "---\n## <a name=\"exceptions-analysis\"></a><span data-ttu-id=\"8b5f1-121\">Ausnahmenanalyse</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-121\">Exceptions Analysis</span></span>\n"
+                "json": "---\n## <a name=\"exceptions-analysis\"></a>Ausnahmenanalyse\n"
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -263,7 +263,7 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"exception-trends\"></a><span data-ttu-id=\"8b5f1-122\">Trends bei Ausnahmen</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-122\">Exception Trends</span></span>"
+                "json": "### <a name=\"exception-trends\"></a>Trends bei Ausnahmen"
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -285,7 +285,7 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"exception-details\"></a><span data-ttu-id=\"8b5f1-123\">Ausnahmendetails</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-123\">Exception Details</span></span>\n<span data-ttu-id=\"8b5f1-124\">In dieser Tabelle sind alle Ausnahmen Ihrer App und jeweils der zugehörige Vorgang aufgeführt – sortiert nach den betroffenen Benutzern.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-124\">This table shows all exceptions in your app and related operation - sorted by users impacted.</span></span> <span data-ttu-id=\"8b5f1-125\">Anhand dieser Informationen wissen Sie, welche unterschiedlichen Fehler für Ihre App bestehen und welchen Schweregrad sie aufweisen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-125\">This information will help you know the various errors in your app and their severity.</span></span> <span data-ttu-id=\"8b5f1-126\">Im Bericht ist auch angegeben, ob eine Ausnahme neu ist oder bereits bestanden hat, damit Sie sehen können, wenn Ausnahmen gerade erst aufgetreten sind. Dies sind meist die interessantesten Ausnahmen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-126\">The report also indicates if an exception is new or existing - so you see exceptions that just started happening -- usually the most interesting ones.</span></span>"
+                "json": "### <a name=\"exception-details\"></a>Ausnahmendetails\nIn dieser Tabelle sind alle Ausnahmen Ihrer App und jeweils der zugehörige Vorgang aufgeführt – sortiert nach den betroffenen Benutzern. Anhand dieser Informationen wissen Sie, welche unterschiedlichen Fehler für Ihre App bestehen und welchen Schweregrad sie aufweisen. Im Bericht ist auch angegeben, ob eine Ausnahme neu ist oder bereits bestanden hat, damit Sie sehen können, wenn Ausnahmen gerade erst aufgetreten sind. Dies sind meist die interessantesten Ausnahmen."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -293,7 +293,7 @@
         {
             "type": 1,
             "content": {
-                "json": "\n<span data-ttu-id=\"8b5f1-127\">🔸 Neue Ausnahme 🔹 Vorhandene Ausnahme</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-127\">🔸 New Exception 🔹 Existing Exception</span></span>"
+                "json": "\n🔸 Neue Ausnahme 🔹 Vorhandene Ausnahme"
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -336,7 +336,7 @@
         {
             "type": 1,
             "content": {
-                "json": "---\n## <a name=\"dependency-failure-analysis\"></a><span data-ttu-id=\"8b5f1-128\">Analyse der Abhängigkeitsfehler</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-128\">Dependency Failure Analysis</span></span>\n"
+                "json": "---\n## <a name=\"dependency-failure-analysis\"></a>Analyse der Abhängigkeitsfehler\n"
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -381,7 +381,7 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"failure-rates\"></a><span data-ttu-id=\"8b5f1-129\">Fehlerraten</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-129\">Failure Rates</span></span>\n<span data-ttu-id=\"8b5f1-130\">In diesem Abschnitt erhalten Sie Informationen dazu, wie sich Ihre Abhängigkeitsfehlerraten im Laufe der Zeit ändern – unterteilt nach neuen und vorhandenen Fehlern.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-130\">This section will help you see how your dependency failure rates change over time -- segmented by new vs. existing failures.</span></span>"
+                "json": "### <a name=\"failure-rates\"></a>Fehlerraten\nIn diesem Abschnitt erhalten Sie Informationen dazu, wie sich Ihre Abhängigkeitsfehlerraten im Laufe der Zeit ändern – unterteilt nach neuen und vorhandenen Fehlern."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -403,7 +403,7 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"dependency-volume\"></a><span data-ttu-id=\"8b5f1-131\">Abhängigkeitsvolumen</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-131\">Dependency Volume</span></span>\n<span data-ttu-id=\"8b5f1-132\">In diesem Diagramm sind das Anforderungsvolumen und die Last in Abhängigkeit der Zeit angegeben.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-132\">This chart shows you request volumes or load over time.</span></span> <span data-ttu-id=\"8b5f1-133\">Änderungen beim Volumen können sich auf Fehler und die Leistung auswirken.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-133\">Changes in volume can impact failures and performance.</span></span> <span data-ttu-id=\"8b5f1-134\">Mit diesen Daten wird der Kontext festgelegt, in dem die Fehler aufgetreten sind.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-134\">This data will set the context in which any failures have occured.</span></span>"
+                "json": "### <a name=\"dependency-volume\"></a>Abhängigkeitsvolumen\nIn diesem Diagramm sind das Anforderungsvolumen und die Last in Abhängigkeit der Zeit angegeben. Änderungen beim Volumen können sich auf Fehler und die Leistung auswirken. Mit diesen Daten wird der Kontext festgelegt, in dem die Fehler aufgetreten sind."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -425,7 +425,7 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"dependency-details\"></a><span data-ttu-id=\"8b5f1-135\">Abhängigkeitsdetails</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-135\">Dependency Details</span></span>\n<span data-ttu-id=\"8b5f1-136\">In dieser Tabelle sind alle fehlerhaften Abhängigkeiten Ihrer App und die zugehörigen Ergebniscodes aufgeführt – sortiert nach betroffenen Benutzern.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-136\">This table shows all failing dependencies in your app and their result codes - sorted by users impacted.</span></span> <span data-ttu-id=\"8b5f1-137\">Anhand dieser Informationen wissen Sie, welche unterschiedlichen Fehler für Ihre App bestehen und welchen Schweregrad sie aufweisen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-137\">This information will help you know the various failures in your app and their severity.</span></span> <span data-ttu-id=\"8b5f1-138\">Im Bericht ist auch angegeben, ob ein Fehler neu ist oder bereits bestanden hat, damit Sie sehen können, wenn Fehler gerade erst aufgetreten sind. Dies sind meist die interessantesten Fehler.</span><span class=\"sxs-lookup\"><span data-stu-id=\"8b5f1-138\">The report also indicates if a failure is new or existing - so you see failures just started happening -- usually the most interesting ones.</span></span>"
+                "json": "### <a name=\"dependency-details\"></a>Abhängigkeitsdetails\nIn dieser Tabelle sind alle fehlerhaften Abhängigkeiten Ihrer App und die zugehörigen Ergebniscodes aufgeführt – sortiert nach betroffenen Benutzern. Anhand dieser Informationen wissen Sie, welche unterschiedlichen Fehler für Ihre App bestehen und welchen Schweregrad sie aufweisen. Im Bericht ist auch angegeben, ob ein Fehler neu ist oder bereits bestanden hat, damit Sie sehen können, wenn Fehler gerade erst aufgetreten sind. Dies sind meist die interessantesten Fehler."
             },
             "conditionalVisibility": null,
             "halfWidth": false

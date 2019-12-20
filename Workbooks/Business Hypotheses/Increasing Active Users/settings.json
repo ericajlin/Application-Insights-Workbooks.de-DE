@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"f3bb6-101\">Steigern der Anzahl aktiver Benutzer</span><span class=\"sxs-lookup\"><span data-stu-id=\"f3bb6-101\">Increasing Active Users</span></span>",
+    "name": "Steigern der Anzahl aktiver Benutzer",
     "author": "Microsoft",
     "galleries": [
         {

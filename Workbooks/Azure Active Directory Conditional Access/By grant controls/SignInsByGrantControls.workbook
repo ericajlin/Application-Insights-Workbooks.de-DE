@@ -4,7 +4,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"sign-ins-by-grant-controls\"></a><span data-ttu-id=\"4cc0b-101\">Anmeldungen nach Gewährungssteuerelementen</span><span class=\"sxs-lookup\"><span data-stu-id=\"4cc0b-101\">Sign-ins by Grant Controls</span></span>"
+                "json": "## <a name=\"sign-ins-by-grant-controls\"></a>Anmeldungen nach Gewährungssteuerelementen"
             },
             "name": "text - 0"
         },

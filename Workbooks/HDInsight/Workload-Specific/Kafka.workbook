@@ -4,7 +4,7 @@
         {
             "type": 1,
             "content": {
-                "json": "# <a name=\"hdinsight-kafka-insights\"></a><span data-ttu-id=\"40761-101\">HDInsight Kafka-Erkenntnisse</span><span class=\"sxs-lookup\"><span data-stu-id=\"40761-101\">HDInsight Kafka Insights</span></span>"
+                "json": "# <a name=\"hdinsight-kafka-insights\"></a>HDInsight Kafka-Erkenntnisse"
             },
             "name": "text - 1"
         },
@@ -257,7 +257,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"metricskafkacl-table-not-found\"></a><span data-ttu-id=\"40761-102\">Tabelle „metrics_kafka_CL“ nicht gefunden</span><span class=\"sxs-lookup\"><span data-stu-id=\"40761-102\">metrics_kafka_CL table not found</span></span>\n<span data-ttu-id=\"40761-103\">Stellen Sie sicher, dass Sie mindestens 1 HDInsight Kafka-Cluster mit aktivierter Integration von Azure Monitor-Protokollen haben, der mit diesem Arbeitsbereich verknüpft ist.</span><span class=\"sxs-lookup\"><span data-stu-id=\"40761-103\">Ensure you have at least 1 HDInsight Kafka cluster with Azure Monitor Logs integration enabled and linked to this workspace.</span></span> <span data-ttu-id=\"40761-104\">Beachten Sie die Dokumentation <a href=\"https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-oms-log-analytics-tutorial\">Verwenden von Azure Monitor-Protokollen zum Überwachen von HDInsight-Clustern</a>.</span><span class=\"sxs-lookup\"><span data-stu-id=\"40761-104\">See the documentation<a href=\"https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-oms-log-analytics-tutorial\">, Use Azure Monitor logs to monitor HDInsight clusters</a>.</span></span>"
+                "json": "## <a name=\"metrics_kafka_cl-table-not-found\"></a>Tabelle „metrics_kafka_CL“ nicht gefunden\nStellen Sie sicher, dass Sie mindestens 1 HDInsight Kafka-Cluster mit aktivierter Integration von Azure Monitor-Protokollen haben, der mit diesem Arbeitsbereich verknüpft ist. Beachten Sie die Dokumentation <a href=\"https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-oms-log-analytics-tutorial\">Verwenden von Azure Monitor-Protokollen zum Überwachen von HDInsight-Clustern</a>."
             },
             "conditionalVisibility": {
                 "parameterName": "KafkaMetricsTableExists",

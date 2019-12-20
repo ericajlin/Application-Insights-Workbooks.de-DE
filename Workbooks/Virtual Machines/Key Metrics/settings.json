@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"abc46-101\">Die wichtigsten Metriken</span><span class=\"sxs-lookup\"><span data-stu-id=\"abc46-101\">Key Metrics</span></span>",
+    "name": "Die wichtigsten Metriken",
     "author": "Microsoft",
     "galleries": [
         {

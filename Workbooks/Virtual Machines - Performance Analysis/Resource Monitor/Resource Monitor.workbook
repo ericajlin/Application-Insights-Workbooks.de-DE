@@ -4,7 +4,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"06aaf-101\">💠 Nur die erste Abfrage wird aktiviert. Aktivieren Sie `RunQuery` für die anderen Metriken, um die entsprechende Abfrage auszuführen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-101\">💠 Only the first query is turned on, turn on `RunQuery` on the other metrics to run the respective query.</span></span>"
+                "json": "💠 Nur die erste Abfrage wird aktiviert. Aktivieren Sie `RunQuery` für die anderen Metriken, um die entsprechende Abfrage auszuführen."
             },
             "conditionalVisibility": null,
             "name": "text - 17"
@@ -210,7 +210,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"cpu\"></a><span data-ttu-id=\"06aaf-102\">CPU</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-102\">CPU</span></span>"
+                "json": "## <a name=\"cpu\"></a>CPU"
             },
             "conditionalVisibility": null,
             "name": "text - 1"
@@ -261,7 +261,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"06aaf-103\">⚠ *Nur Prozesse von Windows-VMs werden angezeigt.*</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-103\">⚠ *Only processes from Windows VMs are shown*</span></span>\n\n<span data-ttu-id=\"06aaf-104\">**Zähler**</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-104\">**Counters**</span></span>\n- <span data-ttu-id=\"06aaf-105\">PerfMon Windows (Prozess/% Prozessorzeit, Prozess/% Benutzerzeit, Prozessor/% Prozessorzeit, Prozessor/% Benutzerzeit)</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-105\">PerfMon Windows (Process/% Processor Time, Process/% User Time, Processor/% Processor Time, Processor/% User Time)</span></span>\n- <span data-ttu-id=\"06aaf-106\">PerfMon Linux (Prozess/% privilegierte Zeit, Prozess/% Benutzerzeit, Prozessor/% Prozessorzeit, Prozessor/% Benutzerzeit, Prozessor/% privilegierte Zeit)</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-106\">PerfMon Linux (Process/Pct Privileged Time, Process/Pct User Time, Processor/% Processor Time, Processor/% User Time, Processor/% Privileged Time)</span></span>\n- <span data-ttu-id=\"06aaf-107\">ServiceMap (ServiceMapComputer_CL)</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-107\">ServiceMap (ServiceMapComputer_CL)</span></span>"
+                "json": "⚠ *Nur Prozesse von Windows-VMs werden angezeigt.*\n\n**Zähler**\n- PerfMon Windows (Prozess/% Prozessorzeit, Prozess/% Benutzerzeit, Prozessor/% Prozessorzeit, Prozessor/% Benutzerzeit)\n- PerfMon Linux (Prozess/% privilegierte Zeit, Prozess/% Benutzerzeit, Prozessor/% Prozessorzeit, Prozessor/% Benutzerzeit, Prozessor/% privilegierte Zeit)\n- ServiceMap (ServiceMapComputer_CL)"
             },
             "conditionalVisibility": {
                 "parameterName": "ShowHelp",
@@ -423,7 +423,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"disk\"></a><span data-ttu-id=\"06aaf-108\">Datenträger</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-108\">Disk</span></span>"
+                "json": "## <a name=\"disk\"></a>Datenträger"
             },
             "conditionalVisibility": null,
             "name": "text - 4"
@@ -474,7 +474,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"06aaf-109\">⚠ *Nur Windows-VMs werden angezeigt.* ⚠ *Für Prozesse und nicht pro Computer aggregierte Computerstatistiken*</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-109\">⚠ *Only Windows VMs are shown* ⚠ *Computer stats aggregated over processes, not per computer*</span></span>\n\n<span data-ttu-id=\"06aaf-110\">**Zähler**</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-110\">**Counters**</span></span>\n- <span data-ttu-id=\"06aaf-111\">PerfMon Windows (Prozess/E/A-Bytes gelesen/s, Prozess/E/A-Bytes geschrieben/s, Prozess/E/A-Lesevorgänge/s, Prozess/E/A-Schreibvorgänge/s)</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-111\">PerfMon Windows (Process/IO Read Bytes/sec, Process/IO Write Bytes/sec, Process/IO Read Operations/sec, Process/IO Write Operations/sec)</span></span>"
+                "json": "⚠ *Nur Windows-VMs werden angezeigt.* ⚠ *Für Prozesse und nicht pro Computer aggregierte Computerstatistiken*\n\n**Zähler**\n- PerfMon Windows (Prozess/E/A-Bytes gelesen/s, Prozess/E/A-Bytes geschrieben/s, Prozess/E/A-Lesevorgänge/s, Prozess/E/A-Schreibvorgänge/s)"
             },
             "conditionalVisibility": {
                 "parameterName": "ShowHelp",
@@ -616,7 +616,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"network\"></a><span data-ttu-id=\"06aaf-112\">Netzwerk</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-112\">Network</span></span>"
+                "json": "## <a name=\"network\"></a>Netzwerk"
             },
             "conditionalVisibility": null,
             "name": "text - 7"
@@ -667,7 +667,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"06aaf-113\">⚠ *Für Prozesse und nicht pro Computer aggregierte Computerstatistiken*</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-113\">⚠ *Computer stats aggregated over processes, not per computer*</span></span>\n\n<span data-ttu-id=\"06aaf-114\">**Zähler**</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-114\">**Counters**</span></span>\n- <span data-ttu-id=\"06aaf-115\">ServiceMap (VMConnection)</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-115\">ServiceMap (VMConnection)</span></span>"
+                "json": "⚠ *Für Prozesse und nicht pro Computer aggregierte Computerstatistiken*\n\n**Zähler**\n- ServiceMap (VMConnection)"
             },
             "conditionalVisibility": {
                 "parameterName": "ShowHelp",
@@ -762,7 +762,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"memory\"></a><span data-ttu-id=\"06aaf-116\">Arbeitsspeicher</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-116\">Memory</span></span>"
+                "json": "## <a name=\"memory\"></a>Arbeitsspeicher"
             },
             "conditionalVisibility": null,
             "name": "text - 10"
@@ -813,7 +813,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"06aaf-117\">⚠ *Für Prozesse und nicht pro Computer aggregierte Computerstatistiken*</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-117\">⚠ *Computer stats aggregated over processes, not per computer*</span></span>\n\n<span data-ttu-id=\"06aaf-118\">**Zähler**</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-118\">**Counters**</span></span>\n- <span data-ttu-id=\"06aaf-119\">PerfMon Windows (Prozess/Private Bytes)</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-119\">PerfMon Windows (Process/Private Bytes)</span></span>\n- <span data-ttu-id=\"06aaf-120\">PerfMon Linux (Prozess/Verwendeter Arbeitsspeicher)</span><span class=\"sxs-lookup\"><span data-stu-id=\"06aaf-120\">PerfMon Linux (Process/Used Mmeory)</span></span>"
+                "json": "⚠ *Für Prozesse und nicht pro Computer aggregierte Computerstatistiken*\n\n**Zähler**\n- PerfMon Windows (Prozess/Private Bytes)\n- PerfMon Linux (Prozess/Verwendeter Arbeitsspeicher)"
             },
             "conditionalVisibility": {
                 "parameterName": "ShowHelp",

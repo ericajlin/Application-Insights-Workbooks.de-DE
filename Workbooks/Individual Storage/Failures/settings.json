@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"c1711-101\">Fehler</span><span class=\"sxs-lookup\"><span data-stu-id=\"c1711-101\">Failures</span></span>",
+    "name": "Fehler",
     "author": "Microsoft",
     "galleries": [
         {

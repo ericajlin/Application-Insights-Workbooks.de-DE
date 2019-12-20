@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"fd228-101\">Zeitskalen authentifizierter Benutzer</span><span class=\"sxs-lookup\"><span data-stu-id=\"fd228-101\">Authenticated User Timelines</span></span>",
+    "name": "Zeitskalen authentifizierter Benutzer",
     "author": "Microsoft",
     "galleries": [
         {

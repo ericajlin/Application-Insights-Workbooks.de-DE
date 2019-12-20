@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"150e7-101\">TCP-Datenverkehr</span><span class=\"sxs-lookup\"><span data-stu-id=\"150e7-101\">TCP Traffic</span></span>",
+    "name": "TCP-Datenverkehr",
     "author": "Microsoft",
     "galleries": [
         {

@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"1719f-101\">Analyse der Anmeldungsfehler</span><span class=\"sxs-lookup\"><span data-stu-id=\"1719f-101\">Sign-ins Failure Analysis</span></span>",
+    "name": "Analyse der Anmeldungsfehler",
     "author": "Microsoft",
     "galleries": [
         {

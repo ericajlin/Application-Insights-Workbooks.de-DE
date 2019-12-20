@@ -84,7 +84,7 @@
         {
             "type": 1,
             "content": {
-                "json": "⚠️ Entweder sind keine Vorgänge ausgewählt, oder es sind keine Key Vault-Protokolldaten für diese Ressource vorhanden.\n\nInformationen zum Konfigurieren der Protokollierung finden Sie im folgenden Artikel:<br>\n[https://doi.org/10.13012/J8PN93H8](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/azure-key-vault#enable-key-vault-diagnostics-in-the-portal)"
+                "json": "⚠️ Entweder sind keine Vorgänge ausgewählt, oder es sind keine Key Vault-Protokolldaten für diese Ressource vorhanden.\n\nInformationen zum Konfigurieren der Protokollierung finden Sie im folgenden Artikel:<br>\nhttps://docs.microsoft.com/en-us/azure/azure-monitor/insights/azure-key-vault#enable-key-vault-diagnostics-in-the-portal"
             },
             "conditionalVisibility": {
                 "parameterName": "Operations",

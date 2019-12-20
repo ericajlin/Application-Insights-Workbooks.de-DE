@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"8c37d-101\">Klammerbindung</span><span class=\"sxs-lookup\"><span data-stu-id=\"8c37d-101\">Bracket Retention</span></span>",
+    "name": "Klammerbindung",
     "author": "Microsoft",
     "galleries": [
         {

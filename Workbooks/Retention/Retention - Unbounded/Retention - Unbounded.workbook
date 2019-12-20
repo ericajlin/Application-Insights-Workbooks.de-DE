@@ -6,7 +6,7 @@
         {
             "type": 1,
             "content": {
-                "json": "# <a name=\"unbounded-retention\"></a><span data-ttu-id=\"78d69-101\">Unbegrenzte Vermerkdauer</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-101\">Unbounded Retention</span></span>\n\n<span data-ttu-id=\"78d69-102\">„Unbegrenzte Vermerkdauer“ zeigt den Prozentsatz der Benutzer, die an einem bestimmten Tag **oder einem beliebigen Zeitpunkt nach diesem Tag** zurückkehrten.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-102\">Unbounded retention shows you the percentage of users who came back on a specific day **or anytime after that day**.</span></span> <span data-ttu-id=\"78d69-103\">Diese Information ist hilfreich, wenn Sie anzeigen möchten, wie viele neue Benutzer nach der ersten Woche zu Ihrer App zurückkehren.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-103\">It is useful in cases where you want to see how many new users returning to your app after the first week.</span></span>"
+                "json": "# <a name=\"unbounded-retention\"></a>Unbegrenzte Vermerkdauer\n\n„Unbegrenzte Vermerkdauer“ zeigt den Prozentsatz der Benutzer, die an einem bestimmten Tag **oder einem beliebigen Zeitpunkt nach diesem Tag** zurückkehrten. Diese Information ist hilfreich, wenn Sie anzeigen möchten, wie viele neue Benutzer nach der ersten Woche zu Ihrer App zurückkehren."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -14,7 +14,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"activity-selection\"></a><span data-ttu-id=\"78d69-104\">Aktivitätsauswahl</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-104\">Activity Selection</span></span>\n<span data-ttu-id=\"78d69-105\">Verwenden Sie diese Felder, um Ereignisse festzulegen, die interessanten Benutzeraktivitäten entsprechen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-105\">Use these fields to set events that that correspond to interesting user activities.</span></span> <span data-ttu-id=\"78d69-106\">Im Abschnitt `Understanding Retention Parameter` unten werden diese Parameter ausführlich beschrieben.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-106\">The `Understanding Retention Parameter` section at the bottom describes these parameters in detail.</span></span>"
+                "json": "## <a name=\"activity-selection\"></a>Aktivitätsauswahl\nVerwenden Sie diese Felder, um Ereignisse festzulegen, die interessanten Benutzeraktivitäten entsprechen. Im Abschnitt `Understanding Retention Parameter` unten werden diese Parameter ausführlich beschrieben."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -74,7 +74,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"retention-parameter\"></a><span data-ttu-id=\"78d69-107\">Vermerkdauerparameter</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-107\">Retention Parameter</span></span>\n<span data-ttu-id=\"78d69-108\">Verwenden Sie diese Felder, um Ihre Vermerkdauereinstellungen anzupassen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-108\">Use these fields to customize your retention settings.</span></span>"
+                "json": "## <a name=\"retention-parameter\"></a>Vermerkdauerparameter\nVerwenden Sie diese Felder, um Ihre Vermerkdauereinstellungen anzupassen."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -91,7 +91,7 @@
                         "version": "KqlParameterItem/1.0",
                         "name": "RetentionPeriod",
                         "type": 2,
-                        "description": "<span data-ttu-id=\"78d69-109\">1d: Daily, 7d: Weekly, 30/28d: Monatlich</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-109\">1d: Daily, 7d: Weekly, 30/28d: Monthly</span></span>",
+                        "description": "1d (1 Tag): Daily, 7d (Täglich, 7 Tage): Weekly, 30/28d (Wöchentlich, 30/28 Tage): Monatlich",
                         "isRequired": true,
                         "multiSelect": null,
                         "query": "datatable(id:string, text:string)[\n'1d', 'Daily',\n'7d', 'Weekly',\n'28d', 'Monthly (28 days)', \n'30d', 'Monthly (30 days)'\n]",
@@ -101,7 +101,7 @@
                         "isRequired": true,
                         "name": "CohortsToAnalyze",
                         "value": "6",
-                        "description": "<span data-ttu-id=\"78d69-110\">Anzahl von zu analysierenden Kohortenzeiträumen</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-110\">Number of cohort periods to analyze</span></span>",
+                        "description": "Anzahl von zu analysierenden Kohortenzeiträumen",
                         "id": "fa4b29d9-bfc1-46e3-98f1-3cba05afbea3",
                         "type": 1
                     },
@@ -151,7 +151,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"understanding-retention-paramters\"></a><span data-ttu-id=\"78d69-111\">Grundlegendes zu Bindungsparametern</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-111\">Understanding Retention Paramters</span></span>\n| <span data-ttu-id=\"78d69-112\">Parameter</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-112\">Parameter</span></span> | <span data-ttu-id=\"78d69-113\">Verwendung</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-113\">Used for</span></span> |\n| ----- | ----- |\n| <span data-ttu-id=\"78d69-114\">Aufbewahrungszeitraum</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-114\">Retention Period</span></span> | <span data-ttu-id=\"78d69-115\">Der Zeitraum, der für die Berechnung des Bindungswerts verwendet wird.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-115\">The period to use in retention calculation.</span></span> <span data-ttu-id=\"78d69-116\">Kann „Täglich“, „Wöchentlich“ oder „Monatlich“ lauten</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-116\">Can be Daily, Weekly or Monthly</span></span> |\n| <span data-ttu-id=\"78d69-117\">Zu analysierende Kohorten</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-117\">Cohorts To Analyze</span></span>  | <span data-ttu-id=\"78d69-118\">Gibt die Anzahl von zu analysierenden Kohorten an.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-118\">The number of cohorts to analyze.</span></span> <span data-ttu-id=\"78d69-119\">Dies entspricht dem „N“ der Bindung mit dem Zeitraum „N“.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-119\">This corresponds to the N in N-period retention</span></span> |\n| <span data-ttu-id=\"78d69-120\">Kohortenaktivitäten</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-120\">Cohorting Activities</span></span>  | <span data-ttu-id=\"78d69-121\">Die Aktivitäten, die von einer Kohorte von Benutzern ausgewählt werden.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-121\">The activities that selects a cohort of users.</span></span> <span data-ttu-id=\"78d69-122\">Beispiel: Benutzer, die das Ereignis *Produktbewertung lesen* (Kohortenaktivität) verwendet haben.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-122\">Example: Users who used event *Read Product Review* (cohorting activity).</span></span> |\n| <span data-ttu-id=\"78d69-123\">Bindungsaktivitäten</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-123\">Retaining Activities</span></span>  | <span data-ttu-id=\"78d69-124\">Die Aktivitäten, mit denen die Bindung eines oben ausgewählten Kohortenbenutzers angegeben wird.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-124\">The activities that indicates retention of a cohorted user selected above.</span></span> <span data-ttu-id=\"78d69-125\">Beispiel: Benutzer, die das Ereignis *Produktbewertung lesen* (Kohortenaktivität) verwendet haben und zurückgekehrt sind, um *Produkt kaufen* (Bindungsaktivität) zu verwenden.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-125\">Example: Users who used event *Read Product Review* (cohorting activity) and returned to use *Purchase Product* (retaining activity).</span></span> |\n| <span data-ttu-id=\"78d69-126\">Kohorten-/Bindungsfilter</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-126\">Cohorting/Retaining Filters</span></span>  | <span data-ttu-id=\"78d69-127\">Ein Analytics-Abfragecodeausschnitt zum weiteren Filtern der Kohortenaktivität.</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-127\">An analytics query snippet to further filter the cohorting activity.</span></span> <span data-ttu-id=\"78d69-128\">Beispiel: *&#124; where application_Version = '1.0'*</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-128\">Example: *&#124; where application_Version = '1.0'*</span></span> |\n"
+                "json": "## <a name=\"understanding-retention-paramters\"></a>Grundlegendes zu Bindungsparametern\n| Parameter | Verwendung |\n| ----- | ----- |\n| Bindungsdauer | Der Zeitraum, der für die Berechnung des Bindungswerts verwendet wird. Kann „Täglich“, „Wöchentlich“ oder „Monatlich“ lauten |\n| Zu analysierende Kohorten  | Gibt die Anzahl von zu analysierenden Kohorten an. Dies entspricht dem „N“ der Bindung mit dem Zeitraum „N“. |\n| Kohortenaktivitäten  | Die Aktivitäten, die von einer Kohorte von Benutzern ausgewählt werden. Beispiel: Benutzer, die das Ereignis *Produktbewertung lesen* (Kohortenaktivität) verwendet haben. |\n| Bindungsaktivitäten  | Die Aktivitäten, mit denen die Bindung eines oben ausgewählten Kohortenbenutzers angegeben wird. Beispiel: Benutzer, die das Ereignis *Produktbewertung lesen* (Kohortenaktivität) verwendet haben und zurückgekehrt sind, um *Produkt kaufen* (Bindungsaktivität) zu verwenden. |\n| Kohorten-/Bindungsfilter  | Ein Abfragecodeausschnitt für die Analyse zum weiteren Filtern der Kohortenaktivität. Beispiel: *&#124; where application_Version = '1.0'* |\n"
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -159,7 +159,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"related-workbook-templates\"></a><span data-ttu-id=\"78d69-129\">Verwandte Arbeitsmappenvorlagen</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-129\">Related Workbook Templates</span></span>\n* <span data-ttu-id=\"78d69-130\">Bindung: Zeitraum „N“</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-130\">Retention - N-Period</span></span>\n* <span data-ttu-id=\"78d69-131\">Bindung: Klammer</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-131\">Retention - Bracket</span></span>\n* <span data-ttu-id=\"78d69-132\">Kohortenanalyse</span><span class=\"sxs-lookup\"><span data-stu-id=\"78d69-132\">Cohort Analysis</span></span>"
+                "json": "## <a name=\"related-workbook-templates\"></a>Verwandte Arbeitsmappenvorlagen\n* Bindung: Zeitraum „N“\n* Bindung: Klammer\n* Kohortenanalyse"
             },
             "conditionalVisibility": null,
             "halfWidth": false
