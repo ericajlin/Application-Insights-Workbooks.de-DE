@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"5cc44-101\">HTTP-Fehler</span><span class=\"sxs-lookup\"><span data-stu-id=\"5cc44-101\">Http Errors</span></span>",
+    "name": "HTTP-Fehler",
     "author": "Microsoft",
     "galleries": [
         {

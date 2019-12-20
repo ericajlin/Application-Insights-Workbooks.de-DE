@@ -207,14 +207,14 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"22382-101\">💡 <em>Wählen Sie in der Tabelle unten eine Zeile aus, um Portdetails für diesen Eintrag anzuzeigen.</em></span><span class=\"sxs-lookup\"><span data-stu-id=\"22382-101\">💡 <em>Select a row from the table below to view port details for that entry.</em></span></span>"
+                "json": "💡 <em>Wählen Sie in der Tabelle unten eine Zeile aus, um Portdetails für diesen Eintrag anzuzeigen.</em>"
             },
             "conditionalVisibility": null
         },
         {
             "type": 1,
             "content": {
-                "json": "<h2 style=\"font-weight:normal;\"><span data-ttu-id=\"22382-102\">Liste der offenen Ports für alle Computer im Arbeitsbereich</span><span class=\"sxs-lookup\"><span data-stu-id=\"22382-102\">List of Open Ports for all Computers in the Workspace</span></span></h2>"
+                "json": "<h2 style=\"font-weight:normal;\">Liste der offenen Ports für alle Computer im Arbeitsbereich</h2>"
             },
             "conditionalVisibility": null,
             "customWidth": "50"
@@ -222,7 +222,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h2 style=\"font-weight:normal;\"><span data-ttu-id=\"22382-103\">Ports, die von Prozessen auf dem ausgewählten Computer verwendet werden</span><span class=\"sxs-lookup\"><span data-stu-id=\"22382-103\">Ports in use by Processes on the Selected Computer</span></span></h2>"
+                "json": "<h2 style=\"font-weight:normal;\">Ports, die von Prozessen auf dem ausgewählten Computer verwendet werden</h2>"
             },
             "conditionalVisibility": null,
             "customWidth": "50"

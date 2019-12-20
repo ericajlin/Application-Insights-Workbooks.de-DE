@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"d1bad-101\">Ressourcenmetriken</span><span class=\"sxs-lookup\"><span data-stu-id=\"d1bad-101\">Resource Metrics</span></span>",
+    "name": "Ressourcenmetriken",
     "author": "Microsoft",
     "galleries": [
         {

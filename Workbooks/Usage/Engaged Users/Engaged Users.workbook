@@ -5,7 +5,7 @@
         {
             "type": 1,
             "content": {
-                "json": "# <a name=\"engaged-users\"></a><span data-ttu-id=\"3ec88-101\">Aktive Benutzer</span><span class=\"sxs-lookup\"><span data-stu-id=\"3ec88-101\">Engaged Users</span></span>\n---\n<span data-ttu-id=\"3ec88-102\">Ein Benutzer ist _aktiv_, wenn er Ihre App innerhalb eines Zeitfensters eine bestimmte Anzahl von Tagen genutzt hat.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3ec88-102\">An _engaged_ user is someone who has used your app a certain number of days within a time window.</span></span> <span data-ttu-id=\"3ec88-103\">Beispielsweise können Sie einen aktiven Benutzer als Person definieren, die das Feature X innerhalb von 30 Tagen an mindestens _5_ verschiedenen Tagen genutzt hat.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3ec88-103\">For instance, you could define an engaged user as a person who used feature X on at least _5_ unique days over a 30 day range.</span></span> <span data-ttu-id=\"3ec88-104\">Auf diese Weise können Sie ernsthafte Benutzer Ihrer App von den Gelegenheitsbenutzern unterscheiden.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3ec88-104\">This allows you to differentiate serious users of your app from the more casual ones.</span></span> \n\n<span data-ttu-id=\"3ec88-105\">Verwenden Sie den Parameter `Activities`, um die Ereignisse auszuwählen, die in die Berechnung der Aktivität einfließen sollen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3ec88-105\">Use the `Activities` parameter to choose the events that count towards engagement.</span></span> <span data-ttu-id=\"3ec88-106\">Mit den Parametern `Period`, `DaysUsed` und `CustomDaysUsed` können Sie die Aktivitätsdefinitionen festlegen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"3ec88-106\">The `Period`, `DaysUsed` and `CustomDaysUsed` parameters allow you to select set the engagement definitions.</span></span> \n"
+                "json": "# <a name=\"engaged-users\"></a>Aktive Benutzer\n---\nEin Benutzer ist _aktiv_, wenn er Ihre App innerhalb eines Zeitfensters eine bestimmte Anzahl von Tagen genutzt hat. Beispielsweise können Sie einen aktiven Benutzer als Person definieren, die das Feature X innerhalb von 30 Tagen an mindestens _5_ verschiedenen Tagen genutzt hat. Auf diese Weise können Sie ernsthafte Benutzer Ihrer App von den Gelegenheitsbenutzern unterscheiden. \n\nVerwenden Sie den Parameter `Activities`, um die Ereignisse auszuwählen, die in die Berechnung der Aktivität einfließen sollen. Mit den Parametern `Period`, `DaysUsed` und `CustomDaysUsed` können Sie die Aktivitätsdefinitionen festlegen. \n"
             }
         },
         {
@@ -87,7 +87,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"growth-rates\"></a><span data-ttu-id=\"3ec88-107\">Zuwachsraten</span><span class=\"sxs-lookup\"><span data-stu-id=\"3ec88-107\">Growth Rates</span></span>\n"
+                "json": "## <a name=\"growth-rates\"></a>Zuwachsraten\n"
             }
         },
         {

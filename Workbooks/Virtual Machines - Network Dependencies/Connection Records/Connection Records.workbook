@@ -4,7 +4,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"19e99-101\">Jeder <strong>Datensatz</strong> von [VMConnections](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/service-map) stellt eine Verbindung zwischen zwei Computern in einem 1-Minuten-Intervall dar.</span><span class=\"sxs-lookup\"><span data-stu-id=\"19e99-101\">Each <strong>record</strong> from [VMConnections](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/service-map) represents a connection from one machine to another over a 1-minute interval.</span></span>\n\n<span data-ttu-id=\"19e99-102\">Jeder <strong>Datensatz</strong> aggregiert die folgenden Eigenschaften in einem 1-Minuten-Intervall: die Gesamtanzahl der gesendeten und empfangenen Bytes, die Anzahl der eingerichteten (derzeit aktiven und beendeten) Verknüpfungen (Portverbindungen) und die Anzahl der empfangenen Antworten.</span><span class=\"sxs-lookup\"><span data-stu-id=\"19e99-102\">Each <strong>record</strong> aggregates the following properties over a 1-minute interval: the total number of bytes sent and received, the number of links (port connections) that are established, currently active, and terminated, and the number of responses received.</span></span>\n\n<hr style=\"height: 2px;\" />"
+                "json": "Jeder <strong>Datensatz</strong> von [VMConnections](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/service-map) stellt eine Verbindung zwischen zwei Computern in einem 1-Minuten-Intervall dar.\n\nJeder <strong>Datensatz</strong> aggregiert die folgenden Eigenschaften in einem 1-Minuten-Intervall: die Gesamtanzahl der gesendeten und empfangenen Bytes, die Anzahl der eingerichteten (derzeit aktiven und beendeten) Verknüpfungen (Portverbindungen) und die Anzahl der empfangenen Antworten.\n\n<hr style=\"height: 2px;\" />"
             },
             "conditionalVisibility": null
         },
@@ -157,14 +157,14 @@
         {
             "type": 1,
             "content": {
-                "json": "<p><span data-ttu-id=\"19e99-103\"><strong>TimeRange</strong> gibt an, für welchen zurückliegenden Zeitraum Verbindungsdatensätze von <em>VMConnections</em> erfasst werden sollen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"19e99-103\"><strong>TimeRange</strong> specifies how far back in time to gather connection records from <em>VMConnections</em>.</span></span> <span data-ttu-id=\"19e99-104\">Die Auswahl eines großen Zeitbereichs führt zu einer langen Verarbeitungszeit von Abfragen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"19e99-104\">Selecting a large time range will result in a long query processing time.</span></span></p>\n\n<hr style=\"height: 1px;\" />"
+                "json": "<p><strong>TimeRange</strong> gibt an, für welchen zurückliegenden Zeitraum Verbindungsdatensätze von <em>VMConnections</em> erfasst werden sollen. Die Auswahl eines großen Zeitbereichs führt zu einer langen Verarbeitungszeit von Abfragen.</p>\n\n<hr style=\"height: 1px;\" />"
             },
             "conditionalVisibility": null
         },
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"aggregate-connection-records\"></a><span data-ttu-id=\"19e99-105\">Aggregieren von Verbindungsdatensätzen</span><span class=\"sxs-lookup\"><span data-stu-id=\"19e99-105\">Aggregate Connection Records</span></span>\n\n"
+                "json": "### <a name=\"aggregate-connection-records\"></a>Aggregieren von Verbindungsdatensätzen\n\n"
             },
             "conditionalVisibility": null,
             "customWidth": "25"
@@ -172,7 +172,7 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"connection-records-by-country\"></a><span data-ttu-id=\"19e99-106\">Verbindungsdatensätze nach Land</span><span class=\"sxs-lookup\"><span data-stu-id=\"19e99-106\">Connection Records by Country</span></span>"
+                "json": "### <a name=\"connection-records-by-country\"></a>Verbindungsdatensätze nach Land/Region"
             },
             "conditionalVisibility": null,
             "customWidth": "75"

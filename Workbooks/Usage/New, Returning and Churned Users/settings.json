@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"c91e1-101\">Neue, wiederkehrende und abgewanderte Benutzer</span><span class=\"sxs-lookup\"><span data-stu-id=\"c91e1-101\">New, Returning and Churned Users</span></span>",
+    "name": "Neue, wiederkehrende und abgewanderte Benutzer",
     "author": "Microsoft",
     "galleries": [
         {

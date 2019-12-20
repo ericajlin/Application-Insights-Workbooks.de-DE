@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"510ab-101\">Kapazität des Knotendatenträgers: CI</span><span class=\"sxs-lookup\"><span data-stu-id=\"510ab-101\">Node Disk Capacity CI</span></span>",
+    "name": "Kapazität des Knotendatenträgers: CI",
     "author": "Microsoft",
     "isPreview": true,
     "galleries": [

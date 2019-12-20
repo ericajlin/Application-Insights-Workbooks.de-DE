@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"ce8b7-101\">Knotendatenträger-E/A</span><span class=\"sxs-lookup\"><span data-stu-id=\"ce8b7-101\">Node Disk IO</span></span>",
+    "name": "Knotendatenträger-E/A",
     "author": "Microsoft",
     "galleries": [
         {

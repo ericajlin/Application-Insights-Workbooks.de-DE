@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/settings.json",
-    "name": "<span data-ttu-id=\"6caf7-101\">Konformitätsaktivität in Intune</span><span class=\"sxs-lookup\"><span data-stu-id=\"6caf7-101\">Intune Compliance Activity</span></span>",
+    "name": "Konformitätsaktivität in Intune",
     "author": "Microsoft",
     "galleries": [
         {
