@@ -172,7 +172,7 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"connection-records-by-country\"></a>Verbindungsdatensätze nach Land"
+                "json": "### <a name=\"connection-records-by-country\"></a>Verbindungsdatensätze nach Land/Region"
             },
             "conditionalVisibility": null,
             "customWidth": "75"

@@ -6,7 +6,7 @@
         {
             "type": 1,
             "content": {
-                "json": "# <a name=\"n-period-retention\"></a>Bindung mit Zeitraum „N“\n\nBei der Bindung mit Zeitraum „N“ (N-Period Retention) wird gemessen, wie viele Ihrer Benutzer zurückkehren, um innerhalb eines bestimmten Zeitraums eine Aktivität vom Typ `RetainingActivities` durchzuführen, nachdem sie in Ihrer App eine Aktivität vom Typ `CohortingActivities` durchgeführt haben. Sie können beispielsweise die Anzahl von Benutzern messen, die am 10. Tag nach dem ersten Herunterladen Ihrer App zurückgekehrt sind und die App genutzt haben. Anhand des Bindungstrends für die Tage 1 bis 10 können Sie die Bindung („Stickiness“) Ihrer App erkennen. \n\nDie Bindung mit „N“ Tagen eignet sich gut für Spiele-Apps oder andere Arten von Apps, bei denen Sie erreichen möchten, dass Benutzer diese täglich nutzen."
+                "json": "# <a name=\"n-period-retention\"></a>Bindung mit Zeitraum „N“\n\nBei der Bindung mit Zeitraum „N“ wird gemessen, wie viele Ihrer Benutzer zurückkehren, um innerhalb eines bestimmten Zeitraums eine Aktivität vom Typ `RetainingActivities` durchzuführen, nachdem sie in Ihrer App eine Aktivität vom Typ `CohortingActivities` durchgeführt haben. Sie können beispielsweise die Anzahl von Benutzern messen, die am 10. Tag nach dem ersten Herunterladen Ihrer App zurückgekehrt sind und die App genutzt haben. Anhand des Bindungstrends für die Tage 1 bis 10 können Sie die Bindung („Stickiness“) Ihrer App erkennen. \n\nDie Bindung mit „N“ Tagen eignet sich gut für Spiele-Apps oder andere Arten von Apps, bei denen Sie erreichen möchten, dass Benutzer diese täglich nutzen."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -71,7 +71,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"retention-parameters\"></a>Parameter für Bindung\nVerwenden Sie diese Felder, um Ihre Vermerkdauereinstellungen anzupassen. "
+                "json": "## <a name=\"retention-parameters\"></a>Parameter für Bindung\nVerwenden Sie diese Felder, um Ihre Bindungseinstellungen anzupassen. "
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -88,7 +88,7 @@
                         "version": "KqlParameterItem/1.0",
                         "name": "RetentionPeriod",
                         "type": 2,
-                        "description": "1d: Daily, 7d: Weekly, 30/28d: Monatlich",
+                        "description": "1d (1 Tag): Daily, 7d (Täglich, 7 Tage): Weekly, 30/28d (Wöchentlich, 30/28 Tage): Monatlich",
                         "isRequired": true,
                         "multiSelect": null,
                         "query": "datatable(id:string, text:string)[\n'1d', 'Daily',\n'7d', 'Weekly',\n'28d', 'Monthly (28 days)', \n'30d', 'Monthly (30 days)'\n]",
@@ -124,7 +124,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"understanding-retention-parameters\"></a>Grundlegendes zu Bindungsparametern\n| Parameter | Verwendung |\n| ----- | ----- |\n| Aufbewahrungszeitraum | Der Zeitraum, der für die Berechnung des Bindungswerts verwendet wird. Kann „Täglich“, „Wöchentlich“ oder „Monatlich“ lauten |\n| Zu analysierende Kohorten  | Gibt die Anzahl von zu analysierenden Kohorten an. Dies entspricht dem „N“ der Bindung mit dem Zeitraum „N“. |\n| Kohortenaktivitäten  | Die Aktivitäten, die von einer Kohorte von Benutzern ausgewählt werden. Beispiel: Benutzer, die das Ereignis *Produktbewertung lesen* (Kohortenaktivität) verwendet haben. |\n| Bindungsaktivitäten  | Die Aktivitäten, mit denen die Bindung eines oben ausgewählten Kohortenbenutzers angegeben wird. Beispiel: Benutzer, die das Ereignis *Produktbewertung lesen* (Kohortenaktivität) verwendet haben und zurückgekehrt sind, um *Produkt kaufen* (Bindungsaktivität) zu verwenden. |\n| Kohorten-/Bindungsfilter  | Ein Analytics-Abfragecodeausschnitt zum weiteren Filtern der Kohortenaktivität. Beispiel: *&#124; where application_Version = '1.0'* |\n"
+                "json": "## <a name=\"understanding-retention-parameters\"></a>Grundlegendes zu Bindungsparametern\n| Parameter | Verwendung |\n| ----- | ----- |\n| Bindungsdauer | Der Zeitraum, der für die Berechnung des Bindungswerts verwendet wird. Kann „Täglich“, „Wöchentlich“ oder „Monatlich“ lauten |\n| Zu analysierende Kohorten  | Gibt die Anzahl von zu analysierenden Kohorten an. Dies entspricht dem „N“ der Bindung mit dem Zeitraum „N“. |\n| Kohortenaktivitäten  | Die Aktivitäten, die von einer Kohorte von Benutzern ausgewählt werden. Beispiel: Benutzer, die das Ereignis *Produktbewertung lesen* (Kohortenaktivität) verwendet haben. |\n| Bindungsaktivitäten  | Die Aktivitäten, mit denen die Bindung eines oben ausgewählten Kohortenbenutzers angegeben wird. Beispiel: Benutzer, die das Ereignis *Produktbewertung lesen* (Kohortenaktivität) verwendet haben und zurückgekehrt sind, um *Produkt kaufen* (Bindungsaktivität) zu verwenden. |\n| Kohorten-/Bindungsfilter  | Ein Abfragecodeausschnitt für die Analyse zum weiteren Filtern der Kohortenaktivität. Beispiel: *&#124; where application_Version = '1.0'* |\n"
             },
             "conditionalVisibility": null,
             "halfWidth": false
