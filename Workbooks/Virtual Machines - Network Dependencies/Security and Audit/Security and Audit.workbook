@@ -236,7 +236,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"malicious-traffic\"></a><span data-ttu-id=\"5c97d-101\">Schädlicher Datenverkehr</span><span class=\"sxs-lookup\"><span data-stu-id=\"5c97d-101\">Malicious Traffic</span></span>\n<span data-ttu-id=\"5c97d-102\">💡 *Wählen Sie `MaliciousIp` oder `Country` (oder beides) aus, um den Datenverkehr in den unten dargestellten Tabellen zu filtern. Wählen Sie `Overall` in beiden Tabellen aus, um zurück zur Ansicht mit dem gesamten Datenverkehr zu wechseln.*</span><span class=\"sxs-lookup\"><span data-stu-id=\"5c97d-102\">💡 *Select either `MaliciousIp` or `Country` (or both) to filter traffic data in the tables below. Select `Overall` in both tables to revert back to the overall traffic view.*</span></span>"
+                "json": "## <a name=\"malicious-traffic\"></a>Schädlicher Datenverkehr\n💡 *Wählen Sie `MaliciousIp` oder `Country` (oder beides) aus, um den Datenverkehr in den unten dargestellten Tabellen zu filtern. Wählen Sie `Overall` in beiden Tabellen aus, um zurück zur Ansicht mit dem gesamten Datenverkehr zu wechseln.*"
             },
             "conditionalVisibility": null
         },
@@ -460,7 +460,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"overall-trafficmaliciousiptextcountryname\"></a><span data-ttu-id=\"5c97d-103\">Gesamter Datenverkehr{MaliciousIpText}{CountryName}</span><span class=\"sxs-lookup\"><span data-stu-id=\"5c97d-103\">Overall Traffic{MaliciousIpText}{CountryName}</span></span>"
+                "json": "## <a name=\"overall-trafficno_loc_phmaliciousiptextno_loc_phno_loc_phcountrynameno_loc_ph\"></a>Gesamter Datenverkehr{MaliciousIpText}{CountryName}"
             },
             "conditionalVisibility": null
         },
@@ -487,7 +487,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"top-vms-network-trafficmaliciousiptextcountryname\"></a><span data-ttu-id=\"5c97d-104\">Wichtigste VMs (Netzwerkdatenverkehr){MaliciousIpText}{CountryName}</span><span class=\"sxs-lookup\"><span data-stu-id=\"5c97d-104\">Top VMs (Network Traffic){MaliciousIpText}{CountryName}</span></span>"
+                "json": "## <a name=\"top-vms-network-trafficno_loc_phmaliciousiptextno_loc_phno_loc_phcountrynameno_loc_ph\"></a>Wichtigste virtuelle Computer (Netzwerkdatenverkehr){MaliciousIpText}{CountryName}"
             },
             "conditionalVisibility": null
         },
@@ -562,7 +562,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"top-destinations-remote-ipsmaliciousiptextcountryname\"></a><span data-ttu-id=\"5c97d-105\">Top-Ziele (Remote-IPs){MaliciousIpText}{CountryName}</span><span class=\"sxs-lookup\"><span data-stu-id=\"5c97d-105\">Top Destinations (Remote IPs){MaliciousIpText}{CountryName}</span></span>"
+                "json": "## <a name=\"top-destinations-remote-ipsno_loc_phmaliciousiptextno_loc_phno_loc_phcountrynameno_loc_ph\"></a>Wichtigste Ziele (Remote-IP-Adressen){MaliciousIpText}{CountryName}"
             },
             "conditionalVisibility": null
         },
@@ -650,7 +650,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"security-detection\"></a><span data-ttu-id=\"5c97d-106\">Sicherheitserkennung</span><span class=\"sxs-lookup\"><span data-stu-id=\"5c97d-106\">Security Detection</span></span>"
+                "json": "## <a name=\"security-detection\"></a>Sicherheitserkennung"
             },
             "conditionalVisibility": null
         },
@@ -714,7 +714,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"5c97d-107\">⚠ `SecurityDetection` wurde in diesem Arbeitsbereich nicht erkannt.</span><span class=\"sxs-lookup\"><span data-stu-id=\"5c97d-107\">⚠ `SecurityDetection` was not detected in this workspace.</span></span> <span data-ttu-id=\"5c97d-108\">Integrieren Sie entweder die Sicherheitserkennung, oder warten Sie, bis die Daten aufgefüllt wurden.</span><span class=\"sxs-lookup\"><span data-stu-id=\"5c97d-108\">Please either onboard Security Detection or wait until data has been populated.</span></span>"
+                "json": "⚠ `SecurityDetection` wurde in diesem Arbeitsbereich nicht erkannt. Integrieren Sie entweder die Sicherheitserkennung, oder warten Sie, bis die Daten aufgefüllt wurden."
             },
             "conditionalVisibility": {
                 "parameterName": "SecurityDetectionTest",

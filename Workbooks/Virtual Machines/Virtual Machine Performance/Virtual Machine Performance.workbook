@@ -6,7 +6,7 @@
         {
             "type": 1,
             "content": {
-                "json": "# <a name=\"virtual-machine-performance\"></a><span data-ttu-id=\"62673-101\">Leistung des virtuellen Computers</span><span class=\"sxs-lookup\"><span data-stu-id=\"62673-101\">Virtual Machine Performance</span></span>\n<span data-ttu-id=\"62673-102\">Analysieren Sie mit dieser Arbeitsmappe die Leistungsindikatoren (Prozessor, Arbeitsspeicher, Datenträger usw.) Ihres virtuellen Computers.</span><span class=\"sxs-lookup\"><span data-stu-id=\"62673-102\">Analyze the performance counters (processor, memory, disk, etc.) of your VMs using this workbook.</span></span>  <span data-ttu-id=\"62673-103\">Mit der Schaltfläche `Edit` auf der Symbolleiste können Sie die Analyse auch anpassen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"62673-103\">You can also choose to customize the analysis by using the `Edit` button in the toolbar.</span></span>"
+                "json": "# <a name=\"virtual-machine-performance\"></a>Leistung des virtuellen Computers\nAnalysieren Sie mit dieser Arbeitsmappe die Leistungsindikatoren (Prozessor, Arbeitsspeicher, Datenträger usw.) Ihres virtuellen Computers.  Mit der Schaltfläche `Edit` auf der Symbolleiste können Sie die Analyse auch anpassen."
             },
             "conditionalVisibility": null
         },
@@ -213,14 +213,14 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"62673-104\">Verwenden Sie den Parameter `Counter`, um zu einem anderen Indikator für virtuelle Computer zu wechseln.</span><span class=\"sxs-lookup\"><span data-stu-id=\"62673-104\">Use the `Counter` parameter to switch to a different VM counter.</span></span> <span data-ttu-id=\"62673-105\">Mit dem Parameter `VirtualMachines` können Sie weitere virtuelle Computer in die Analyse aufnehmen.</span><span class=\"sxs-lookup\"><span data-stu-id=\"62673-105\">You can include more VMs in your analysis using the `VirtualMachines` parameter.</span></span> "
+                "json": "Verwenden Sie den Parameter `Counter`, um zu einem anderen Indikator für virtuelle Computer zu wechseln. Mit dem Parameter `VirtualMachines` können Sie weitere virtuelle Computer in die Analyse aufnehmen. "
             },
             "conditionalVisibility": null
         },
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"computers\"></a><span data-ttu-id=\"62673-106\">Computer</span><span class=\"sxs-lookup\"><span data-stu-id=\"62673-106\">Computers</span></span>"
+                "json": "## <a name=\"computers\"></a>Computer"
             },
             "conditionalVisibility": null
         },
@@ -274,14 +274,14 @@
         {
             "type": 1,
             "content": {
-                "json": "<span data-ttu-id=\"62673-107\">*Klicken Sie auf eine Zeile, um Trends nur für diesen Computer anzuzeigen*</span><span class=\"sxs-lookup\"><span data-stu-id=\"62673-107\">*Click on a row to see trends for just that computer*</span></span>"
+                "json": "*Klicken Sie auf eine Zeile, um Trends nur für diesen Computer anzuzeigen*"
             },
             "conditionalVisibility": null
         },
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"trend-computer\"></a><span data-ttu-id=\"62673-108\">Trend: {computer}</span><span class=\"sxs-lookup\"><span data-stu-id=\"62673-108\">Trend: {computer}</span></span>"
+                "json": "## <a name=\"trend-no_loc_phcomputerno_loc_ph\"></a>Trend: {computer}"
             },
             "conditionalVisibility": null
         },

@@ -128,7 +128,7 @@
         {
             "type": 1,
             "content": {
-                "json": "{Message} _Schlüsseltresore_"
+                "json": "{Message}\n_Schlüsseltresore_"
             },
             "name": "text - 5",
             "styleSettings": {

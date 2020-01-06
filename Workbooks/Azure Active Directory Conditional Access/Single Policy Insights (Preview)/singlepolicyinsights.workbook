@@ -163,7 +163,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"impact-summary\"></a>Zusammenfassung der Auswirkungen\nHier finden Sie die Auswirkungen der ausgewählten Richtlinie in Ihrem Mandanten über den Zeitraum „{TimeRange}“. \n\n💡 _Sie können die Zusammenfassung anhand der Anzahl von Benutzern oder der Anzahl von Anmeldungen anzeigen. Klicken Sie auf eine Kachel, um Details anzuzeigen._"
+                "json": "## <a name=\"impact-summary\"></a>Zusammenfassung der Auswirkungen\nHier sehen Sie die Auswirkungen der ausgewählten Richtlinie in Ihrem Mandanten über den Zeitraum ({TimeRange}). \n\n💡 _Sie können die Zusammenfassung anhand der Anzahl von Benutzern oder der Anzahl von Anmeldungen anzeigen. Klicken Sie auf eine Kachel, um Details anzuzeigen._"
             },
             "name": "text - 5"
         },
