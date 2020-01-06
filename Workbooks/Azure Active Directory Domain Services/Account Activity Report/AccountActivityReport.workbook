@@ -565,7 +565,7 @@
         {
             "type": 1,
             "content": {
-                "json": "_\\* **{AuthResultA}** Anmeldeversuche für **{name}** werden angezeigt._"
+                "json": "_\\* **{AuthResultA}** Anmeldeversuche für **{name}**_"
             },
             "conditionalVisibility": {
                 "parameterName": "TileView",
@@ -577,7 +577,7 @@
         {
             "type": 1,
             "content": {
-                "json": "_\\* **{AuthResultB}** Anmeldeversuche für **{name}** werden angezeigt._"
+                "json": "_\\* **{AuthResultB}** Anmeldeversuche für **{name}**_"
             },
             "conditionalVisibility": {
                 "parameterName": "TIleView",

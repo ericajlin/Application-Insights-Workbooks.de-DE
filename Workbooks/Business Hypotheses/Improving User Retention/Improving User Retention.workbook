@@ -5,13 +5,13 @@
         {
             "type": 1,
             "content": {
-                "json": "# <a name=\"hypothesis---proposed-change-will-improve-user-retention-by-expected-improvement\"></a>Mit dem Ansatz „Hypothese – _[vorgeschlagene Änderung]_“ wird die Benutzerbindung um _[erwartete Verbesserung]_ verbessert.\n---\nEine gute Hypothese ist das Herzstück der datengesteuerten Entscheidungsfindung. Mit Hypothesen können Sie Informationen zur Nutzung Ihrer App durch die Kunden in verwertbare Verbesserungsvorschläge verwandeln. Verwenden Sie diese Arbeitsmappe, um eine Hypothese zur Verbesserung der Bindungsraten Ihrer Benutzer aufzustellen."
+                "json": "# <a name=\"hypothesis---_proposed-change_-will-improve-user-retention-by-_expected-improvement_\"></a>Mit dem Ansatz „Hypothese – _[vorgeschlagene Änderung]_“ wird die Benutzerbindung um _[erwartete Verbesserung]_ verbessert.\n---\nEine gute Hypothese ist das Herzstück der datengesteuerten Entscheidungsfindung. Mit Hypothesen können Sie Informationen zur Nutzung Ihrer App durch die Kunden in verwertbare Verbesserungsvorschläge verwandeln. Verwenden Sie diese Arbeitsmappe, um eine Hypothese zur Verbesserung der Bindungsraten Ihrer Benutzer aufzustellen."
             }
         },
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"problem---problem-statement\"></a>Problem: _[Problembeschreibung]_\nFügen Sie im Abschnitt eine Zusammenfassung des Problems hinzu. Die Zusammenfassung sollte kurz sein und nicht mehr als einige Sätze umfassen. Beschreiben Sie das Problem eindeutig, und vermeiden Sie unwichtige Details. \n\n\n"
+                "json": "## <a name=\"problem---_problem-statement_\"></a>Problem: _[Problembeschreibung]_\nFügen Sie im Abschnitt eine Zusammenfassung des Problems hinzu. Die Zusammenfassung sollte kurz sein und nicht mehr als einige Sätze umfassen. Beschreiben Sie das Problem eindeutig, und vermeiden Sie unwichtige Details. \n\n\n"
             }
         },
         {
@@ -180,7 +180,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"potential-solution---solution-description\"></a>Mögliche Lösung: _[Lösungsbeschreibung]_\nVerwenden Sie diesen Abschnitt, um die vorgeschlagene Lösung zu beschreiben.\n"
+                "json": "## <a name=\"potential-solution---_solution-description_\"></a>Mögliche Lösung: _[Lösungsbeschreibung]_\nVerwenden Sie diesen Abschnitt, um die vorgeschlagene Lösung zu beschreiben.\n"
             }
         },
         {
@@ -204,13 +204,13 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"expected-outcome---user-retention-improves-to-retentiongoal\"></a>Erwartetes Ergebnis: Verbesserung der Bindung auf {RetentionGoal} %\nIn diesem Abschnitt sind die messbaren Ergebnisse der Implementierung der vorgeschlagenen Lösung eindeutig aufgeführt.\n\n"
+                "json": "## <a name=\"expected-outcome---user-retention-improves-to-no_loc_phretentiongoalno_loc_ph\"></a>Erwartetes Ergebnis: Verbesserung der Benutzerbindung auf {RetentionGoal} %\nIn diesem Abschnitt sind die messbaren Ergebnisse der Implementierung der vorgeschlagenen Lösung eindeutig aufgeführt.\n\n"
             }
         },
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"primary-goal---retention-rate-hits-retentiongoal\"></a>Hauptziel: Bindungsrate erreicht {RetentionGoal} %\n"
+                "json": "### <a name=\"primary-goal---retention-rate-hits-no_loc_phretentiongoalno_loc_ph\"></a>Hauptziel: Bindungsrate erreicht {RetentionGoal} %\n"
             }
         },
         {

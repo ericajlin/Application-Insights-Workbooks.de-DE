@@ -176,7 +176,7 @@
                         "version": "KqlParameterItem/1.0",
                         "name": "Country",
                         "type": 2,
-                        "description": "Beschränken der Ergebnisse auf ein bestimmtes Land",
+                        "description": "Beschränken der Ergebnisse auf ein bestimmtes Land/eine bestimmte Region",
                         "isRequired": true,
                         "query": "customEvents\r\n| where name == \"mz\"\r\n| distinct client_CountryOrRegion\r\n| project b = client_CountryOrRegion, n = client_CountryOrRegion\r\n| union (\r\ndatatable(b:string, n:string )[\r\n'*', 'All Countries'\r\n]\r\n)",
                         "value": "*",
@@ -614,7 +614,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h2 style=\"text-decoration: underline; margin-bottom: 0;\">Leistung von Unterzeitdaten für die Route „{Route}“</h2>\nDieses Diagramm wird verwendet, wenn Ihr <strong>ALT</strong>-Wert rückläufig ist.  Diese Zeitdaten stammen aus dem Leistungszeitdaten-Objekt des Browsers.  Diese Unterzeitdaten stammen aus Zeitdaten zur Leistungsnavigation aus dem Browser und basieren auf den <a href=\"https://www.w3.org/TR/2012/REC-navigation-timing-20121217/\">W3C-Standards</a>.  Weitere Informationen finden Sie auf der <a href=\"https://github.com/Microsoft/Mezzurite\">GitHub-Seite zu Mezzurite</a>."
+                "json": "<h2 style=\"text-decoration: underline; margin-bottom: 0;\">Leistung von Unterzeitdaten beim Laden der Anwendung für die Route „{Route}“</h2>\nDieses Diagramm wird verwendet, wenn Ihr <strong>ALT</strong>-Wert rückläufig ist.  Diese Zeitdaten stammen aus dem Leistungszeitdaten-Objekt des Browsers.  Diese Unterzeitdaten stammen aus Zeitdaten zur Leistungsnavigation aus dem Browser und basieren auf den <a href=\"https://www.w3.org/TR/2012/REC-navigation-timing-20121217/\">W3C-Standards</a>.  Weitere Informationen finden Sie auf der <a href=\"https://github.com/Microsoft/Mezzurite\">GitHub-Seite zu Mezzurite</a>."
             },
             "conditionalVisibility": {
                 "parameterName": "Route",

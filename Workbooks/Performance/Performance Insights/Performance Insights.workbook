@@ -251,7 +251,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"operation-details----selectedoperation\"></a>Vorgangsdetails -- {SelectedOperation}\n"
+                "json": "## <a name=\"operation-details----no_loc_phselectedoperationno_loc_ph\"></a>Vorgangsdetails: {SelectedOperation}\n"
             },
             "conditionalVisibility": null
         },
@@ -400,7 +400,7 @@
         {
             "type": 1,
             "content": {
-                "json": "Im Diagramm unten ist die Leistung der Abhängigkeiten von *{SelectedOperation}* angegeben. Die Daten werden nur nach den Vorgängen gefiltert, deren Dauern zwischen „p{StartPercentile}“ und „p{EndPercentile}“ der gesamten Verteilung fallen. Ändern Sie die Parameter `AnalysisSet`, `StartPercentile` oder `EndPercentile`, um das Quantilfenster für die Analyse zu optimieren."
+                "json": "Im Diagramm unten ist die Leistung der Abhängigkeiten von *{SelectedOperation}* angegeben. Die Daten werden nur nach den Vorgängen gefiltert, deren Dauer zwischen „p{StartPercentile}“ und „p{EndPercentile}“ der gesamten Verteilung fallen. Ändern Sie die Parameter `AnalysisSet`, `StartPercentile` oder `EndPercentile`, um das Quantilfenster für die Analyse zu optimieren."
             },
             "conditionalVisibility": {
                 "parameterName": "SelectedOperation",

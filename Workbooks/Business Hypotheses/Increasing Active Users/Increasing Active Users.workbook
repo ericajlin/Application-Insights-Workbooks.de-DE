@@ -5,13 +5,13 @@
         {
             "type": 1,
             "content": {
-                "json": "# <a name=\"hypothesis---proposed-change-will-increase-active-users-by-expected-improvement\"></a>Hypothese: _[vorgeschlagene Änderung]_ erhöht die Zahl der aktiven Benutzer um _[erwartete Verbesserung]_\n---\nEine gute Hypothese ist das Herzstück der datengesteuerten Entscheidungsfindung. Mit Hypothesen können Sie Informationen zur Nutzung Ihrer App durch die Kunden in verwertbare Verbesserungsvorschläge verwandeln. Verwenden Sie diese Arbeitsmappe, um eine Hypothese zur Verbesserung in Bezug auf die monatlichen (MAU), wöchentlichen (WAU) oder täglichen (DAU) aktiven Benutzer Ihrer App aufzustellen."
+                "json": "# <a name=\"hypothesis---_proposed-change_-will-increase-active-users-by-_expected-improvement_\"></a>Hypothese: _[vorgeschlagene Änderung]_ erhöht die Zahl der aktiven Benutzer um _[erwartete Verbesserung]_\n---\nEine gute Hypothese ist das Herzstück der datengesteuerten Entscheidungsfindung. Mit Hypothesen können Sie Informationen zur Nutzung Ihrer App durch die Kunden in verwertbare Verbesserungsvorschläge verwandeln. Verwenden Sie diese Arbeitsmappe, um eine Hypothese zur Verbesserung in Bezug auf die monatlichen (MAU), wöchentlichen (WAU) oder täglichen (DAU) aktiven Benutzer Ihrer App aufzustellen."
             }
         },
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"problem---problem-statement\"></a>Problem: _[Problembeschreibung]_\nFügen Sie im Abschnitt eine Zusammenfassung des Problems hinzu. Die Zusammenfassung sollte kurz sein und nicht mehr als einige Sätze umfassen. Beschreiben Sie das Problem eindeutig, und vermeiden Sie unwichtige Details. \n\n\n"
+                "json": "## <a name=\"problem---_problem-statement_\"></a>Problem: _[Problembeschreibung]_\nFügen Sie im Abschnitt eine Zusammenfassung des Problems hinzu. Die Zusammenfassung sollte kurz sein und nicht mehr als einige Sätze umfassen. Beschreiben Sie das Problem eindeutig, und vermeiden Sie unwichtige Details. \n\n\n"
             }
         },
         {
@@ -143,7 +143,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"potential-solution---solution-description\"></a>Mögliche Lösung: _[Lösungsbeschreibung]_\nVerwenden Sie diesen Abschnitt, um die vorgeschlagene Lösung zu beschreiben.\n"
+                "json": "## <a name=\"potential-solution---_solution-description_\"></a>Mögliche Lösung: _[Lösungsbeschreibung]_\nVerwenden Sie diesen Abschnitt, um die vorgeschlagene Lösung zu beschreiben.\n"
             }
         },
         {
@@ -167,7 +167,7 @@
         {
             "type": 1,
             "content": {
-                "json": "## <a name=\"expected-outcome---active-usage-hits-threshold\"></a>Erwartetes Ergebnis: Aktive Nutzung erreicht _[Schwellenwert]_\nIn diesem Abschnitt sind die messbaren Ergebnisse der Implementierung der vorgeschlagenen Lösung eindeutig aufgeführt.\n\n"
+                "json": "## <a name=\"expected-outcome---active-usage-hits-_threshold_\"></a>Erwartetes Ergebnis: Aktive Nutzung erreicht _[Schwellenwert]_\nIn diesem Abschnitt sind die messbaren Ergebnisse der Implementierung der vorgeschlagenen Lösung eindeutig aufgeführt.\n\n"
             }
         },
         {
@@ -192,7 +192,7 @@
         {
             "type": 1,
             "content": {
-                "json": "### <a name=\"primary-goal---active-usage-hits-goal\"></a>Hauptziel: Aktive Nutzung erreicht {Goal}\nDas gewählte Standardziel ist ca. 10 % höher als der aktuelle MAU-Wert. Ändern Sie diesen Wert in das Ziel für Ihre App. "
+                "json": "### <a name=\"primary-goal---active-usage-hits-no_loc_phgoalno_loc_ph\"></a>Hauptziel: Aktive Nutzung erreicht {Goal}\nDas gewählte Standardziel ist ca. 10 % höher als der aktuelle MAU-Wert. Ändern Sie diesen Wert in das Ziel für Ihre App. "
             }
         },
         {

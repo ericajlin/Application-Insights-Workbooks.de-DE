@@ -6,7 +6,7 @@
         {
             "type": 1,
             "content": {
-                "json": "# <a name=\"analysis-of-page-views\"></a>Analyse der Seitenaufrufe\nSeitenaufrufe entsprechen Benutzeraktivitäten in Ihrer App. Wenn Sie wissen, wie die Benutzer mit Ihren Seiten interagieren, gewinnen Sie wertvolle Erkenntnisse dazu, was für Ihre App gut funktioniert und wo Verbesserungspotenzial besteht. \n\nMit diesem Bericht erhalten Sie Informationen zu häufigem Verhalten bei Seitenaufrufen, z. B.:\n* Nutzung\n* Auf der Seite verbrachte Zeit\n* Zeit bis zur ersten Interaktion\n* Beendigungsraten \n\nFalls Ihre Telemetriedaten keine Seitenaufrufe enthalten, können Sie diese [Anleitung](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript) befolgen, um mit dem Sammeln dieser Daten zu beginnen. Dies ist relativ einfach."
+                "json": "# <a name=\"analysis-of-page-views\"></a>Analyse der Seitenaufrufe\nSeitenaufrufe entsprechen Benutzeraktivitäten in Ihrer App. Wenn Sie wissen, wie die Benutzer mit Ihren Seiten interagieren, gewinnen Sie wertvolle Erkenntnisse dazu, was für Ihre App gut funktioniert und wo Verbesserungspotenzial besteht. \n\nMit diesem Bericht erhalten Sie Informationen zu häufigem Verhalten bei Seitenaufrufen, z. B.:\n* Verwendung\n* Auf der Seite verbrachte Zeit\n* Zeit bis zur ersten Interaktion\n* Beendigungsraten \n\nFalls Ihre Telemetriedaten keine Seitenaufrufe enthalten, können Sie diese [Anleitung](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript) befolgen, um mit dem Sammeln dieser Daten zu beginnen. Dies ist relativ einfach."
             },
             "conditionalVisibility": null,
             "halfWidth": false
@@ -69,7 +69,7 @@
         {
             "type": 1,
             "content": {
-                "json": "---\n## <a name=\"usage\"></a>Nutzung\nIn diesem Abschnitt erhalten Sie Informationen dazu, wie die Seiten Ihrer App in Bezug auf die Anzahl von Benutzern, Sitzungen und Aufrufen verwendet werden. "
+                "json": "---\n## <a name=\"usage\"></a>Verwendung\nIn diesem Abschnitt erhalten Sie Informationen dazu, wie die Seiten Ihrer App in Bezug auf die Anzahl von Benutzern, Sitzungen und Aufrufen verwendet werden. "
             },
             "conditionalVisibility": null,
             "halfWidth": false

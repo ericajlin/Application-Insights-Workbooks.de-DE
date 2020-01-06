@@ -376,7 +376,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>{unit:label}/Sek. lesen</h3>"
+                "json": "<h3>Lesen: {unit:label}/Sek.</h3>"
             },
             "customWidth": "50",
             "name": "text - 5"
@@ -384,7 +384,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>{unit:label}/Sek. schreiben</h3>"
+                "json": "<h3>Schreiben: {unit:label}/Sek.</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy"
@@ -442,7 +442,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>Insgesamt {unit:label} gelesen (in {timeRange:grain}-Intervallen)</h3>"
+                "json": "<h3>Insgesamt gelesen: {unit:label} (Intervalle: {timeRange:grain})</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy - Copy"
@@ -450,7 +450,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>Insgesamt {unit:label} geschrieben (in {timeRange:grain}-Intervallen)</h3>"
+                "json": "<h3>Insgesamt geschrieben: {unit:label} (Intervalle: {timeRange:grain})</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy"
@@ -505,7 +505,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>Millisekunden pro {unit:label} für Lesevorgänge</h3>"
+                "json": "<h3>Millisekunden pro {unit:label} (Lesen)</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy - Copy - Copy"
@@ -513,7 +513,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>Millisekunden pro {unit:label} für Schreibvorgänge</h3>"
+                "json": "<h3>Millisekunden pro {unit:label} (Schreiben)</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy - Copy - Copy - Copy"

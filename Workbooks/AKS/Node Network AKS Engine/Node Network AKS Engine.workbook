@@ -383,7 +383,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>{unit:label}/Sek. gesendet</h3>"
+                "json": "<h3>Gesendet: {unit:label}/Sek.</h3>"
             },
             "customWidth": "50",
             "name": "text - 5"
@@ -391,7 +391,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>{unit:label}/Sek. empfangen</h3>"
+                "json": "<h3>Empfangen: {unit:label}/Sek.</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy"
@@ -449,7 +449,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>Insgesamt {unit:label} gesendet (in {timeRange:grain}-Intervallen)</h3>"
+                "json": "<h3>Insgesamt gesendet: {unit:label} (Intervall: {timeRange:grain})</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy - Copy"
@@ -457,7 +457,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>Insgesamt {unit:label} empfangen (in {timeRange:grain}-Intervallen)</h3>"
+                "json": "<h3>Insgesamt empfangen: {unit:label} (Intervall: {timeRange:grain})</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy"
@@ -575,7 +575,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>Ausgabefehler gesamt (in {timeRange:grain}-Intervallen)</h3>"
+                "json": "<h3>Ausgabefehler gesamt (Intervall: {timeRange:grain})</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy - Copy - Copy - Copy"
@@ -583,7 +583,7 @@
         {
             "type": 1,
             "content": {
-                "json": "<h3>Eingabefehler gesamt (in {timeRange:grain}-Intervallen)</h3>"
+                "json": "<h3>Eingabefehler gesamt (Intervall: {timeRange:grain})</h3>"
             },
             "customWidth": "50",
             "name": "text - 5 - Copy - Copy - Copy - Copy - Copy"
