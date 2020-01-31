@@ -11,6 +11,13 @@
         {
             "type": 1,
             "content": {
+                "json": "### <a name=\"why-convert-view-designer-dashboards-to-workbooks\"></a>Gründe für das Konvertieren von Ansicht-Designer-Dashboards in Arbeitsmappen\n\n\nMit dem Ansicht-Designer können unterschiedliche abfragebasierte Ansichten und Visualisierungen generiert werden. Bei vielen allgemeinen Anpassungen bestehen jedoch weiterhin Einschränkungen, etwa beim Formatieren der Raster- und Kachellayouts oder beim Auswählen alternativer Grafiken zur Darstellung Ihrer Daten. Der Ansicht-Designer ist auf insgesamt neun verschiedene Kacheln für die Darstellung Ihrer Daten beschränkt.\n\nWorkbooks ist eine Plattform, mit der das volle Potenzial Ihrer Daten ausgeschöpft werden kann. Workbooks bietet nicht nur alle Funktionen des Ansicht-Designers, sondern auch mehr Flexibilität und zusätzliche Funktionalität durch Text, Metriken, Parameter und andere Diagrammanpassungen."
+            },
+            "name": "text - 15"
+        },
+        {
+            "type": 1,
+            "content": {
                 "json": "### <a name=\"workbooks-quick-start-templates\"></a>Schnellstartvorlagen für Arbeitsmappen\n\nArbeitsmappen in Log Analytics-Arbeitsbereichen enthalten bereits benutzerdefinierte Vorlagen für die Replikation vorhandener Ansicht-Designer-Kacheln. Unten sind für den schnellen Zugriff Links zu den Vorlagen angegeben. Alternativ können die Vorlagen über den Arbeitsmappenkatalog geöffnet werden."
             },
             "name": "text - 14"
@@ -21,6 +28,20 @@
                 "version": "LinkItem/1.0",
                 "style": "nav",
                 "links": [
+                    {
+                        "linkTarget": "WorkbookTemplate",
+                        "linkLabel": "Tabbed Overview",
+                        "style": "primary",
+                        "workbookContext": {
+                            "componentIdSource": "workbook",
+                            "resourceIdsSource": "workbook",
+                            "templateIdSource": "static",
+                            "templateId": "Community-Workbooks/View Designer/Tabbed",
+                            "typeSource": "workbook",
+                            "gallerySource": "workbook"
+                        },
+                        "alertRuleContext": {}
+                    },
                     {
                         "cellValue": "",
                         "linkTarget": "WorkbookTemplate",
@@ -37,16 +58,17 @@
                     },
                     {
                         "linkTarget": "WorkbookTemplate",
-                        "linkLabel": "Line Chart & List",
+                        "linkLabel": "Timeline & List",
                         "style": "primary",
                         "workbookContext": {
                             "componentIdSource": "workbook",
                             "resourceIdsSource": "workbook",
                             "templateIdSource": "static",
-                            "templateId": "Community-Workbooks/View Designer/LineChart-List",
+                            "templateId": "Community-Workbooks/View Designer/Timeline List",
                             "typeSource": "workbook",
                             "gallerySource": "workbook"
-                        }
+                        },
+                        "alertRuleContext": {}
                     },
                     {
                         "linkTarget": "WorkbookTemplate",
@@ -74,20 +96,6 @@
                             "gallerySource": "workbook"
                         },
                         "alertRuleContext": {}
-                    },
-                    {
-                        "linkTarget": "WorkbookTemplate",
-                        "linkLabel": "Timeline & List",
-                        "style": "primary",
-                        "workbookContext": {
-                            "componentIdSource": "workbook",
-                            "resourceIdsSource": "workbook",
-                            "templateIdSource": "static",
-                            "templateId": "Community-Workbooks/View Designer/Timeline List",
-                            "typeSource": "workbook",
-                            "gallerySource": "workbook"
-                        },
-                        "alertRuleContext": {}
                     }
                 ]
             },
@@ -102,7 +110,7 @@
                     {
                         "cellValue": "https://github.com/microsoft/Application-Insights-Workbooks/blob/master/Documentation/ViewDesigner/ViewDesignerOverview.md",
                         "linkTarget": "Url",
-                        "linkLabel": "View Designer transition guide",
+                        "linkLabel": "View Designer transition documentation",
                         "preText": "For additional assistance, please reference the ",
                         "postText": "",
                         "style": "link"
@@ -292,12 +300,11 @@
             "content": {
                 "version": "KqlItem/1.0",
                 "query": "search *\r\n| summarize AggregatedValue = count() by Type \r\n| order by AggregatedValue desc",
-                "size": 0,
+                "size": 1,
                 "title": "An Example Pie Chart",
                 "timeContext": {
-                    "durationMs": 0
+                    "durationMs": 86400000
                 },
-                "timeContextFromParameter": "Time",
                 "queryType": 0,
                 "resourceType": "microsoft.operationalinsights/workspaces",
                 "visualization": "piechart"
@@ -307,7 +314,7 @@
         {
             "type": 1,
             "content": {
-                "json": "Sie können dieselbe Abfrage erneut verwenden und ein Balkendiagramm erstellen. Wählen Sie hierzu in der Dropdownliste „Visualisierungen“ die Option „Balkendiagramm“ aus.\n\nBei Visualisierungen können Sie ebenfalls Anpassungen vornehmen und beispielsweise die Farbe und die angezeigten Daten ändern, wie in den folgenden Beispielen gezeigt.\n\nSie können auch zahlreiche Schönheitskorrekturen an den Diagrammen vornehmen. Beispielsweise können Sie die Größe der einzelnen Zellen ändern. Außerdem stehen über das Zahnrad (⚙️) für die erweiterten Einstellungen Optionen zum Hinzufügen eines Exports oder zum Anheften an das Dashboard zur Verfügung."
+                "json": "Sie können dieselbe Abfrage erneut verwenden und ein Balkendiagramm erstellen. Wählen Sie hierzu in der Dropdownliste „Visualisierungen“ die Option „Balkendiagramm“ aus.\n\nBei Visualisierungen können Sie ebenfalls Anpassungen vornehmen und beispielsweise die Farbe und die angezeigten Daten ändern, wie in den folgenden Beispielen gezeigt.\n\nSie können Schönheitskorrekturen an den Diagrammen vornehmen und beispielsweise die Größe der einzelnen Zellen ändern. Eine Option zum Hinzufügen eines Exports bzw. zum Anheften an das Dashboard ist in den erweiterten Einstellungen (⚙️) verfügbar."
             },
             "name": "text - 9"
         },
@@ -319,9 +326,8 @@
                 "size": 0,
                 "title": "One Example Bar Chart",
                 "timeContext": {
-                    "durationMs": 0
+                    "durationMs": 86400000
                 },
-                "timeContextFromParameter": "Time",
                 "queryType": 0,
                 "resourceType": "microsoft.operationalinsights/workspaces",
                 "visualization": "barchart"
@@ -334,13 +340,12 @@
             "content": {
                 "version": "KqlItem/1.0",
                 "query": "search *\r\n| summarize AggregatedValue = count() by Type\r\n| order by AggregatedValue desc",
-                "size": 0,
+                "size": 3,
                 "showAnalytics": true,
                 "title": "Another Example Bar Chart",
                 "timeContext": {
-                    "durationMs": 0
+                    "durationMs": 86400000
                 },
-                "timeContextFromParameter": "Time",
                 "showExportToExcel": true,
                 "queryType": 0,
                 "resourceType": "microsoft.operationalinsights/workspaces",
@@ -348,12 +353,12 @@
                 "chartSettings": {
                     "seriesLabelSettings": [
                         {
-                            "seriesName": "AzureDiagnostics",
+                            "seriesName": "*",
                             "color": "purple"
                         },
                         {
                             "seriesName": "Usage",
-                            "color": "turquoise"
+                            "color": "purple"
                         }
                     ]
                 }
